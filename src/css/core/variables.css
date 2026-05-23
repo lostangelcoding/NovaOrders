@@ -1,0 +1,22 @@
+:root{
+    /* Colors */
+    --primary-bg: #000000;
+    --secondary-bg: #150050;
+    --surface-color: #3F0071;
+
+    --accent-color: #610094;
+    --accent-hover: #6B0A9F;
+
+    --shadow-color: 0 0 10px #7F329F;
+
+    /* Font & Text */
+    --text-main: #fff;
+    --text-muted: #444;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 32px;
+    --spacing-xl: 64px;
+}

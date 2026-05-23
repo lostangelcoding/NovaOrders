@@ -1,0 +1,22 @@
+/* Import Components */
+@import url(components/badge.css);
+@import url(components/button.css);
+@import url(components/card.css);
+@import url(components/input.css);
+@import url(components/toast.css);
+
+/* Import Core */
+@import url(core/animations.css);
+@import url(core/base.css);
+@import url(core/reset.css);
+@import url(core/typography.css);
+@import url(core/variables.css);
+
+/* Import Modules */
+@import url(modules/footer.css);
+@import url(modules/header.css);
+@import url(modules/order-panel.css);
+@import url(modules/services.css);
+
+/* Import Utils */
+@import url(utils.css);

@@ -1,0 +1,11 @@
+body{
+    background: linear-gradient(
+        135deg, 
+        var(--primary-bg), 
+        var(--secondary-bg), 
+        var(--surface-color)
+    );
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-main);
+}
