@@ -6,6 +6,6 @@ export async function loadPartial(id, url) {
         const html = await response.text()
         document.getElementById(id).innerHTML = html;
     } catch (err) {
-        console.error('Omg... You have a error message, read this: ', err);
+        console.error('Something wen wrong, read this: ', err);
     }
 }
