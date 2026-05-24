@@ -1,0 +1,26 @@
+.about-grid {
+    gap: var(--spacing-l);
+    width: 100%;
+}
+
+.about-card {
+    background-color: var(--secondary-bg);
+    padding: var(--spacing-l);
+    border-radius: 12px;
+    border: 1px solid var(--surface-color);
+    transition: border-color 0.3s ease;
+}
+
+.about-card:hover { 
+    border-color: var(--border-color); 
+}
+
+.about-card h2 { 
+    font-size: var(--text-m); 
+    margin-bottom: var(--spacing-m); 
+    text-shadow: var(--shadow-color); 
+}
+
+.about-card p { 
+    color: var(--text-muted); 
+}

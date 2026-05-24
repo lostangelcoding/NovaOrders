@@ -1,0 +1,32 @@
+.services-preview { 
+    width: 100%; 
+}
+
+.section-header { 
+    margin-bottom: var(--spacing-l); 
+    text-align: center;
+    width: 100%;
+}
+
+.section-header h2 { 
+    font-size: var(--text-l); 
+    margin-bottom: var(--spacing-s); 
+    text-shadow: var(--shadow-color); 
+}
+
+.section-header p { 
+    color: var(--text-muted); 
+}
+
+.services-grid { 
+    gap: var(--spacing-m); 
+    width: 100%; 
+}
+
+.services-grid .service-card {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--surface-color);
+    padding: var(--spacing-l);
+    border-radius: 12px;
+    box-shadow: var(--shadow-color);
+}

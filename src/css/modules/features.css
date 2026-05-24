@@ -1,0 +1,44 @@
+.features { 
+    width: 100%; 
+    text-align: center;
+}
+
+.features h2 { 
+    font-size: var(--text-l); 
+    margin-bottom: var(--spacing-l); 
+    text-shadow: var(--shadow-color); 
+}
+
+.features-grid { 
+    gap: var(--spacing-l); 
+    width: 100%; 
+}
+
+.feature-item {
+    background-color: var(--surface-color);
+    padding: var(--spacing-l);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-color);
+    text-align: left; /* Tekst wewnątrz kafelka wyrównany do lewej */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    background-color: var(--accent-color);
+}
+
+.feature-icon { 
+    font-size: var(--text-l); 
+    margin-bottom: var(--spacing-s); 
+}
+
+.feature-item h3 { 
+    font-size: var(--text-m); 
+    margin-bottom: var(--spacing-s); 
+}
+
+.feature-item p { 
+    color: var(--text-muted); 
+}

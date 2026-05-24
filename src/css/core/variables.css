@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Colors */
     --primary-bg: #000000;
     --secondary-bg: #150050;
@@ -8,10 +8,17 @@
     --accent-hover: #6B0A9F;
 
     --shadow-color: 0 0 10px #7F329F;
+    --border-color: #902cbc;
 
     /* Font & Text */
     --text-main: #fff;
-    --text-muted: #444;
+    --text-muted: #888;
+
+    --text-xs: 8px;
+    --text-s: 16px;
+    --text-m: 24px;
+    --text-l: 32px;
+    --text-xl: 40px;
 
     /* Spacing */
     --spacing-xs: 4px;

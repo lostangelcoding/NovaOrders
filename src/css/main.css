@@ -13,8 +13,11 @@
 @import url(core/variables.css);
 
 /* Import Modules */
+@import url(modules/about.css);
+@import url(modules/features.css);
 @import url(modules/footer.css);
 @import url(modules/header.css);
+@import url(modules/hero.css);
 @import url(modules/order-panel.css);
 @import url(modules/services.css);
 
