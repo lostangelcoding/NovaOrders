@@ -1,10 +1,20 @@
 import { loadPartial } from "/src/js/core/loadPartials.js";
 
-addEventListener('DOMContentLoaded', () => {
+const page = document.body.dataset.page;
 
+addEventListener('DOMContentLoaded', async () => {
     // Partials
-    loadPartial('header', '/src/partials/header.html');
-    loadPartial('footer', '/src/partials/footer.html');
+    await loadPartial('header', '/src/partials/header.html');
+    await loadPartial('footer', '/src/partials/footer.html');
+    
+    if(page === "services") {
+        await loadPartial('', '');
 
-    // To be continued...
-})
+    } else if(page === "service") {
+        await loadPartial('', '');
+        
+    } else if(page === "contact") {
+        await loadPartial('', '');
+    }
+
+});

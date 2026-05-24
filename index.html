@@ -1,22 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novaorders - Modern Service Ordering Experience">
     <title>NovaOrders</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="shortcut icon" href="/src/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/css/main.css">
+    <link rel="canonical" href="">
 </head>
-<body>
+<body class="flex-column">
     <!-- Header -->
-    <header id="header">
+    <header id="header" class="flex">
 
     </header>
 
     <!-- Main -->
-    <main>
+    <main class="flex flex-column">
 
+        <section class="hero flex flex-column flex-center">
+            <h1>Welcome to NovaOrders</h1>
+            <p>Modern system for ordering development services.</p>
+            <a href="/services.html" class="cta-button">Browse services</a>
+        </section>
+
+        <section class="about-grid grid-2-col">
+            <div class="about-card">
+                <h2>What is NovaOrders?</h2>
+                <p>NovaOrders is a lightweight platform for ordering digital services like web development, UI design and backend solutions.</p>
+            </div>
+            <div class="about-card">
+                <h2>Why does it exist?</h2>
+                <p>To simplify how clients request development work without complex, overwhelming systems.</p>
+            </div>
+        </section>
+
+        <section class="services-preview">
+            <div class="section-header flex flex-column flex-center">
+                <h2>Popular services</h2>
+                <p>Explore our most requested digital solutions</p>
+            </div>
+            <div id="services-preview" class="services-grid grid-3-col">
+                
+            </div>
+        </section>
+
+        <section class="features flex flex-column flex-center">
+            <h2>Why choose us?</h2>
+            <div class="features-grid grid-3-col">
+                <div class="feature-item flex flex-column">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Fast Process</h3>
+                    <p>Fast and structured ordering process tailored to your timeline.</p>
+                </div>
+                <div class="feature-item flex flex-column">
+                    <span class="feature-icon">💬</span>
+                    <h3>Clean Flow</h3>
+                    <p>Transparent and clean communication flow at every stage.</p>
+                </div>
+                <div class="feature-item flex flex-column">
+                    <span class="feature-icon">💻</span>
+                    <h3>Dev-Focused</h3>
+                    <p>A developer-focused system built for efficiency and quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta flex flex-column flex-center">
+            <div class="cta-container flex flex-column flex-center">
+                <h2>Ready to transform your ideas into reality?</h2>
+                <p>Get started today and experience a modern way of ordering services.</p>
+                <a href="/services.html" class="cta-button secondary">View services</a>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -25,6 +82,6 @@
     </footer>
 
     <!-- JavaScript -->
-     <script type="module" src="/src/js/index.js"></script>
+    <script type="module" src="/src/js/index.js"></script>
 </body>
 </html>
