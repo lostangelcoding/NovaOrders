@@ -29,6 +29,11 @@ header {
     gap: 20px; 
 }
 
+.nav{
+    font-size: var(--text-m);
+    text-align: center;
+}
+
 .nav li:nth-child(2) {
     margin: 0px var(--spacing-xl);
 }
