@@ -8,7 +8,7 @@ addEventListener('DOMContentLoaded', async () => {
     await loadPartial('footer', '/src/partials/footer.html');
     
     if(page === "services") {
-        await loadPartial('', '');
+        await loadPartial('header-services', '/src/partials/header-services.html');
 
     } else if(page === "service") {
         await loadPartial('', '');
