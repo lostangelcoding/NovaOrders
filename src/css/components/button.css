@@ -31,7 +31,11 @@
 }
 
 .final-cta {
-    background: radial-gradient(circle at center, var(--secondary-bg) 0%, var(--primary-bg) 100%);
+    background: radial-gradient(
+        circle at center, 
+        var(--secondary-bg) 0%, 
+        var(--primary-bg) 100%
+    );
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-color);
     padding: var(--spacing-xl) var(--spacing-m);
