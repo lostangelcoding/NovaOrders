@@ -8,7 +8,8 @@
       "priceTo": 400,
       "category": "development",
       "image": "/src/assets/images/services/web-dev.jpg",
-      "technologies": ["HTML", "CSS", "JavaScript", "React"]
+      "technologies": ["HTML", "CSS", "JavaScript", "React"],
+      "popular": false
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "priceTo": 200,
       "category": "design",
       "image": "/src/assets/images/services/uiux.jpg",
-      "technologies": ["Figma", "Adobe XD", "Design Systems"]
+      "technologies": ["Figma", "Adobe XD", "Design Systems"],
+      "popular": false
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "priceTo": 150,
       "category": "optimization",
       "image": "/src/assets/images/services/optimization.jpg",
-      "technologies": ["Lighthouse", "Webpack", "Performance Profiling"]
+      "technologies": ["Lighthouse", "Webpack", "Performance Profiling"],
+      "popular": false
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "priceTo": 120,
       "category": "support",
       "image": "/src/assets/images/services/maintenance.jpg",
-      "technologies": ["Git", "Debugging", "Version Control"]
+      "technologies": ["Git", "Debugging", "Version Control"],
+      "popular": false
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "priceTo": 300,
       "category": "security",
       "image": "/src/assets/images/services/security.jpg",
-      "technologies": ["OWASP", "XSS", "SQL Injection", "Security Testing"]
+      "technologies": ["OWASP", "XSS", "SQL Injection", "Security Testing"],
+      "popular": false
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "priceTo": 250,
       "category": "integration",
       "image": "/src/assets/images/services/api.jpg",
-      "technologies": ["REST API", "Fetch", "Axios", "JSON"]
+      "technologies": ["REST API", "Fetch", "Axios", "JSON"],
+      "popular": false
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "priceTo": 150,
       "category": "marketing",
       "image": "/src/assets/images/services/landing.jpg",
-      "technologies": ["HTML", "CSS", "Animations", "SEO Basics"]
+      "technologies": ["HTML", "CSS", "Animations", "SEO Basics"],
+      "popular": false
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "priceTo": 130,
       "category": "analytics",
       "image": "/src/assets/images/services/analytics.jpg",
-      "technologies": ["Google Analytics", "Events", "Tracking Scripts"]
+      "technologies": ["Google Analytics", "Events", "Tracking Scripts"],
+      "popular": false
     }
   ]
 }
