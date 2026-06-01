@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: linear-gradient(
         135deg, 
@@ -13,6 +19,7 @@ body {
 }
 
 main {
+    flex: 1;
     background-color: var(--surface-color);
     width: 100%;
     max-width: 1200px;

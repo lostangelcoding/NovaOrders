@@ -1,0 +1,9 @@
+footer{
+    background-color: var(--surface-color);
+    width: 100%;
+    padding: 10px 40px; 
+    box-sizing: border-box;
+    box-shadow: var(--shadow-color);
+    border-top: 1px solid var(--border-color);
+    margin-top: auto;
+}
