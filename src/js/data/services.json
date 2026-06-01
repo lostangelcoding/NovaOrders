@@ -8,7 +8,8 @@
       "priceTo": 400,
       "category": "development",
       "image": "/src/assets/images/services/web-dev.jpg",
-      "technologies": ["HTML", "CSS", "JavaScript", "React"],
+      "sales": 0,
+      "technologies": ["HTML", "CSS", "JavaScript", "React", "PHP", "Node.js", "Next.js"],
       "popular": false
     },
     {
@@ -18,6 +19,7 @@
       "priceFrom": 100,
       "priceTo": 200,
       "category": "design",
+      "sales": 0,
       "image": "/src/assets/images/services/uiux.jpg",
       "technologies": ["Figma", "Adobe XD", "Design Systems"],
       "popular": false
@@ -29,6 +31,7 @@
       "priceFrom": 80,
       "priceTo": 150,
       "category": "optimization",
+      "sales": 0,
       "image": "/src/assets/images/services/optimization.jpg",
       "technologies": ["Lighthouse", "Webpack", "Performance Profiling"],
       "popular": false
@@ -40,6 +43,7 @@
       "priceFrom": 50,
       "priceTo": 120,
       "category": "support",
+      "sales": 0,
       "image": "/src/assets/images/services/maintenance.jpg",
       "technologies": ["Git", "Debugging", "Version Control"],
       "popular": false
@@ -51,6 +55,7 @@
       "priceFrom": 150,
       "priceTo": 300,
       "category": "security",
+      "sales": 0,
       "image": "/src/assets/images/services/security.jpg",
       "technologies": ["OWASP", "XSS", "SQL Injection", "Security Testing"],
       "popular": false
@@ -62,6 +67,7 @@
       "priceFrom": 120,
       "priceTo": 250,
       "category": "integration",
+      "sales": 0,
       "image": "/src/assets/images/services/api.jpg",
       "technologies": ["REST API", "Fetch", "Axios", "JSON"],
       "popular": false
@@ -73,6 +79,7 @@
       "priceFrom": 80,
       "priceTo": 150,
       "category": "marketing",
+      "sales": 0,
       "image": "/src/assets/images/services/landing.jpg",
       "technologies": ["HTML", "CSS", "Animations", "SEO Basics"],
       "popular": false
@@ -84,8 +91,21 @@
       "priceFrom": 60,
       "priceTo": 130,
       "category": "analytics",
+      "sales": 0,
       "image": "/src/assets/images/services/analytics.jpg",
       "technologies": ["Google Analytics", "Events", "Tracking Scripts"],
+      "popular": false
+    },
+    {
+      "id": 9,
+      "title": "CLI tools",
+      "description": "A text-based application to manage cloud services and platform resources directly from the terminal instead of a web browser.",
+      "priceFrom": 100,
+      "priceTo": 200,
+      "category": "development",
+      "sales": 0,
+      "image": "/src/assets/images/services/console.jpg",
+      "technologies": ["Python"],
       "popular": false
     }
   ]
