@@ -1,0 +1,69 @@
+/* Menu */
+.filter-menu td {
+    padding: 8px 10px;
+}
+
+.filter-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(
+        225deg, 
+        var(--primary-bg), 
+        var(--secondary-bg), 
+        var(--surface-color)
+    );
+    box-shadow: var(--shadow-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+.filter-menu.is-open { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Toggle button */
+.filter-toggle {
+    font-size: var(--text-s);
+    border: none;
+    border-radius: 16px;
+    padding: 16px 20px;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-toggle:hover {
+    cursor: pointer;
+    background-color: var(--accent-hover);
+    box-shadow: var(--shadow-color);
+}
+
+.filter-toggle:active {
+    cursor: pointer;
+    background-color: var(--accent-active);
+    box-shadow: var(--shadow-color);
+}
+
+/* Clear button */
+.filter-clear {
+    width: 100%;
+    border: none;
+    border-radius: 0 0 16px 16px;
+    padding: 4px 8px;
+    background-color: var(--accent-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-clear:hover {
+    cursor: pointer;
+    background-color: var(--accent-hover);
+    box-shadow: var(--shadow-color);
+}
+
+.filter-clear:active {
+    cursor: pointer;
+    background-color: var(--accent-active);
+    box-shadow: var(--shadow-color);
+}
