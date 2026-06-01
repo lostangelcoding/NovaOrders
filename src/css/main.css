@@ -2,7 +2,10 @@
 @import url(components/badge.css);
 @import url(components/button.css);
 @import url(components/card.css);
+@import url(components/filter.css);
 @import url(components/input.css);
+@import url(components/search.css);
+@import url(components/switch.css);
 @import url(components/toast.css);
 
 /* Import Core */
