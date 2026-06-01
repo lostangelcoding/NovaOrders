@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies (if present)
+        run: |
+          if [ -f package.json ]; then
+            npm ci
+          else
+            echo "No package.json — skipping install"
+          fi
+
+      - name: Run lint (if configured)
+        run: |
+          if [ -f package.json ] && node -e "try{const p=require('./package.json'); process.exit(p.scripts&&p.scripts.lint?0:1)}catch(e){process.exit(1)}"; then
+            npm run lint
+          else
+            echo "No lint script — skipping"
+          fi
+
+      - name: Run tests (if configured)
+        run: |
+          if [ -f package.json ] && node -e "try{const p=require('./package.json'); process.exit(p.scripts&&p.scripts.test?0:1)}catch(e){process.exit(1)}"; then
+            npm test
+          else
+            echo "No test script — skipping"
+          fi
+
+      - name: Summary
+        run: echo "CI finished. Add more checks (html/css validators) via package.json scripts if needed."
