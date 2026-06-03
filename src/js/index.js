@@ -1,5 +1,8 @@
+// Imports 
+import { fetchServices, getAllServices, renderServices } from "/src/js/modules/services.js";
 import { loadPartial } from "/src/js/core/loadPartials.js";
 
+// Setup
 const page = document.body.dataset.page;
 
 addEventListener('DOMContentLoaded', async () => {
@@ -17,4 +20,19 @@ addEventListener('DOMContentLoaded', async () => {
         await loadPartial('', '');
     }
 
+    // Services
+    try {
+        const allServices = await fetchServices();
+
+        if(page === 'services') {
+            renderServices('services-list', allServices);
+        } else if (page === 'home') {
+            const popularOnly = allServices.filter(services => services.popular);
+            renderServices('services-preview', popularOnly);
+        }
+
+    } catch(error) {
+        console.error("Critical Error: Failed to initialize the services module:", error);
+    }
 });
+
