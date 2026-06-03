@@ -1,0 +1,14 @@
+.badge {
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-color);
+    background-color: var(--secondary-bg);
+    padding: 8px 10px;
+    margin: 0 var(--spacing-s);
+}
+
+.badges-container {
+    position: absolute;
+    top: -14px;
+    left: 5px;
+}

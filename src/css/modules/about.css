@@ -6,9 +6,9 @@
 .about-card {
     background-color: var(--secondary-bg);
     padding: var(--spacing-l);
-    border-radius: 12px;
+    border-radius: var(--border-radius-md);
     border: 1px solid var(--surface-color);
-    transition: border-color 0.3s ease;
+    transition: border-color var(--transition-normal);
 }
 
 .about-card:hover { 

@@ -31,7 +31,7 @@
     border-radius: 16px;
     padding: 16px 20px;
     background-color: var(--accent-color);
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-normal);
 }
 
 .filter-toggle:hover {
@@ -53,7 +53,7 @@
     border-radius: 0 0 16px 16px;
     padding: 4px 8px;
     background-color: var(--accent-color);
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-normal);
 }
 
 .filter-clear:hover {

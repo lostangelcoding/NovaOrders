@@ -2,7 +2,7 @@
     padding: var(--spacing-xl) var(--spacing-m);
     background: linear-gradient(180deg, var(--secondary-bg) 0%, var(--primary-bg) 100%);
     border: 1px solid var(--surface-color);
-    border-radius: 16px;
+    border-radius: var(--border-radius-lg);
     margin-top: var(--spacing-m);
     width: 100%;
     text-align: center;
@@ -11,7 +11,7 @@
 .hero h1 {
     font-size: var(--text-xl);
     margin-bottom: var(--spacing-m);
-    font-weight: 800;
+    font-weight: var(--font-weight-bold);
     text-shadow: var(--shadow-color);
 }
 

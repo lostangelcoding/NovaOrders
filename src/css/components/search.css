@@ -1,0 +1,81 @@
+.search-wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 var(--spacing-l);
+}
+
+.search-wrapper form {
+    width: 100%;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--secondary-bg);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-color);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    overflow: hidden;
+    height: 48px;
+}
+
+.search-input:focus-within {
+    border-color: var(--accent-active);
+    box-shadow: 0 0 15px var(--accent-active);
+}
+
+i.fa-search {
+    margin: 0 var(--spacing-s) 0 0;
+}
+.search-input i.fa-search {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: var(--text-s);
+    padding-left: var(--spacing-m);
+    pointer-events: none;
+}
+
+.search-input input[type="search"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 var(--spacing-m);
+    font-size: var(--text-s);
+    color: var(--text-main);
+    background: transparent;
+    font-family: inherit;
+}
+
+.search-input input[type="search"]::-webkit-search-decoration,
+.search-input input[type="search"]::-webkit-search-cancel-button,
+.search-input input[type="search"]::-webkit-search-results-button,
+.search-input input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.search-input button[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--text-main);
+    border: none;
+    outline: none;
+    padding: 0 var(--spacing-l);
+    font-size: var(--text-s);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.search-input button[type="submit"]:hover {
+    background-color: var(--accent-hover);
+}
+
+.search-input button[type="submit"]:active {
+    background-color: var(--accent-active);
+}

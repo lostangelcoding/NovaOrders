@@ -23,10 +23,49 @@
     width: 100%; 
 }
 
-.services-grid .service-card {
+.service-card {
     background-color: var(--secondary-bg);
     border: 1px solid var(--surface-color);
     padding: var(--spacing-l);
-    border-radius: 12px;
+    border-radius: var(--border-radius-md);
     box-shadow: var(--shadow-color);
+    position: relative;
+    text-align: center;
+    transition: all var(--transition-normal);
+    max-height: 390px;
+    margin: var(--spacing-s) var(--spacing-m);
+}
+
+.service-card:hover{
+    background-color: var(--surface-color);
+    transform: translateY(-16px);
+}
+
+.service-card img {
+    width: 100%;
+    max-height: 150px; 
+    margin: var(--spacing-m) 0; 
+    box-shadow: var(--shadow-color);
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    object-fit: cover;
+}
+
+.service-category, .service-price, .service-description {
+    margin: var(--spacing-s) 0;
+}
+
+.old-price {
+    color: var(--text-muted);
+    font-size: var(--text-s);
+    text-decoration: line-through;
+}
+
+.new-price {
+    color: var(--sales-color);
+}
+
+.service-heading {
+    margin: var(--spacing-m) 0;
+    text-align: center;
 }

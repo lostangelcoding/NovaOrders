@@ -53,7 +53,7 @@ header {
     bottom: -2px;
     left: 0;
     background-color: currentColor;
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-normal);
 }
 
 .nav a:hover::after {

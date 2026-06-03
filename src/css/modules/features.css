@@ -20,8 +20,8 @@
     border-radius: 12px;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-color);
-    text-align: left; /* Tekst wewnątrz kafelka wyrównany do lewej */
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: left; 
+    transition: transform var(--transition-normal), background-color var(--transition-normal);
 }
 
 .feature-item:hover {

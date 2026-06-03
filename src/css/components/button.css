@@ -9,7 +9,7 @@
     font-size: var(--text-s);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-color);
-    transition: all 0.2s ease;
+    transition: all var(--transition-normal);
     cursor: pointer;
     text-align: center;
 }
