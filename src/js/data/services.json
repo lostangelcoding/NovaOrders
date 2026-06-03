@@ -6,11 +6,11 @@
       "description": "Fast and responsive web applications built with modern frontend technologies.",
       "priceFrom": 200,
       "priceTo": 400,
-      "category": "development",
-      "image": "/src/assets/images/services/web-dev.jpg",
-      "sales": 0,
+      "category": "Development",
+      "image": "/src/assets/services/web-dev.jpg",
+      "sales": 30,
       "technologies": ["HTML", "CSS", "JavaScript", "React", "PHP", "Node.js", "Next.js"],
-      "popular": false
+      "popular": true
     },
     {
       "id": 2,
@@ -18,9 +18,9 @@
       "description": "Clean and modern interface design focused on usability and user experience.",
       "priceFrom": 100,
       "priceTo": 200,
-      "category": "design",
+      "category": "Design",
       "sales": 0,
-      "image": "/src/assets/images/services/uiux.jpg",
+      "image": "/src/assets/services/uiux.jpg",
       "technologies": ["Figma", "Adobe XD", "Design Systems"],
       "popular": false
     },
@@ -30,23 +30,23 @@
       "description": "Improve performance, speed and responsiveness of your website.",
       "priceFrom": 80,
       "priceTo": 150,
-      "category": "optimization",
+      "category": "Optimization",
       "sales": 0,
-      "image": "/src/assets/images/services/optimization.jpg",
+      "image": "/src/assets/services/optimization.jpg",
       "technologies": ["Lighthouse", "Webpack", "Performance Profiling"],
       "popular": false
     },
     {
       "id": 4,
       "title": "Website Maintenance",
-      "description": "Bug fixing, updates and basic support for existing websites.",
+      "description": "Bug fixing, updates and support for websites to ensure maximum uptime, performance and security.",
       "priceFrom": 50,
       "priceTo": 120,
-      "category": "support",
-      "sales": 0,
-      "image": "/src/assets/images/services/maintenance.jpg",
+      "category": "Support",
+      "sales": 20,
+      "image": "/src/assets/services/maintenance.jpg",
       "technologies": ["Git", "Debugging", "Version Control"],
-      "popular": false
+      "popular": true
     },
     {
       "id": 5,
@@ -54,11 +54,11 @@
       "description": "Basic vulnerability check and security recommendations for web applications.",
       "priceFrom": 150,
       "priceTo": 300,
-      "category": "security",
-      "sales": 0,
-      "image": "/src/assets/images/services/security.jpg",
+      "category": "Security",
+      "sales": 10,
+      "image": "/src/assets/services/security.jpg",
       "technologies": ["OWASP", "XSS", "SQL Injection", "Security Testing"],
-      "popular": false
+      "popular": true
     },
     {
       "id": 6,
@@ -66,9 +66,9 @@
       "description": "Connect your frontend with external APIs and services.",
       "priceFrom": 120,
       "priceTo": 250,
-      "category": "integration",
-      "sales": 0,
-      "image": "/src/assets/images/services/api.jpg",
+      "category": "Integration",
+      "sales": 10,
+      "image": "/src/assets/services/api.jpg",
       "technologies": ["REST API", "Fetch", "Axios", "JSON"],
       "popular": false
     },
@@ -78,9 +78,9 @@
       "description": "Conversion-focused landing pages for products and services.",
       "priceFrom": 80,
       "priceTo": 150,
-      "category": "marketing",
+      "category": "Marketing",
       "sales": 0,
-      "image": "/src/assets/images/services/landing.jpg",
+      "image": "/src/assets/services/landing.jpg",
       "technologies": ["HTML", "CSS", "Animations", "SEO Basics"],
       "popular": false
     },
@@ -90,21 +90,21 @@
       "description": "Basic tracking and analytics integration for user behavior insights.",
       "priceFrom": 60,
       "priceTo": 130,
-      "category": "analytics",
+      "category": "Analytics",
       "sales": 0,
-      "image": "/src/assets/images/services/analytics.jpg",
+      "image": "/src/assets/services/analytics.jpg",
       "technologies": ["Google Analytics", "Events", "Tracking Scripts"],
       "popular": false
     },
     {
       "id": 9,
       "title": "CLI tools",
-      "description": "A text-based application to manage cloud services and platform resources directly from the terminal instead of a web browser.",
+      "description": "A terminal-based application to manage cloud services directly.",
       "priceFrom": 100,
       "priceTo": 200,
-      "category": "development",
-      "sales": 0,
-      "image": "/src/assets/images/services/console.jpg",
+      "category": "Development",
+      "sales": 20,
+      "image": "/src/assets/services/console.jpg",
       "technologies": ["Python"],
       "popular": false
     }
