@@ -1,25 +1,42 @@
 :root {
-    /* Colors */
+    /* Colors - Primary */
     --primary-bg: #000000;
     --secondary-bg: #150050;
     --surface-color: #3F0071;
 
+    /* Colors - Accent & Interactive */
     --accent-color: #610094;
     --accent-hover: #6B0A9F;
     --accent-active: #902cbc;
 
+    /* Colors - Semantic */
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #3b82f6;
+
+    /* Colors - Text & Shadow */
+    --text-main: #fff;
+    --text-muted: #666;
     --shadow-color: 0 0 10px #7F329F;
     --border-color: #902cbc;
+    --sales-color: #0a0;
 
-    /* Font & Text */
-    --text-main: #fff;
-    --text-muted: #888;
-
+    /* Typography */
     --text-xs: 8px;
     --text-s: 16px;
     --text-m: 24px;
     --text-l: 32px;
     --text-xl: 40px;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.8;
 
     /* Spacing */
     --spacing-xs: 4px;
@@ -27,4 +44,26 @@
     --spacing-m: 16px;
     --spacing-l: 32px;
     --spacing-xl: 64px;
+
+    /* Border & Radius */
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-width: 1px;
+
+    /* Transitions & Animations */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+
+    /* Z-Index Scale */
+    --z-dropdown: 10;
+    --z-sticky: 20;
+    --z-modal: 100;
+    --z-toast: 1000;
+
+    /* Opacity */
+    --opacity-disabled: 0.5;
+    --opacity-hover: 0.8;
+    --opacity-dark: 0.15;
 }
