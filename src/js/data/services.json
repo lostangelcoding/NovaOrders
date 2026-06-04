@@ -9,19 +9,17 @@
       "category": "Development",
       "image": "/src/assets/services/web-dev.jpg",
       "sales": 30,
-      "technologies": ["HTML", "CSS", "JavaScript", "React", "PHP", "Node.js", "Next.js"],
       "popular": true
     },
     {
       "id": 2,
-      "title": "UI/UX Design",
-      "description": "Clean and modern interface design focused on usability and user experience.",
+      "title": "Bot Development",
+      "description": "Custom automated bots for Discord and Telegram to optimize management, engagement, and community workflows.",
       "priceFrom": 100,
-      "priceTo": 200,
-      "category": "Design",
-      "sales": 0,
-      "image": "/src/assets/services/uiux.jpg",
-      "technologies": ["Figma", "Adobe XD", "Design Systems"],
+      "priceTo": 250,
+      "category": "Development",
+      "sales": 40,
+      "image": "/src/assets/services/bot-dev.jpg",
       "popular": false
     },
     {
@@ -33,7 +31,6 @@
       "category": "Optimization",
       "sales": 0,
       "image": "/src/assets/services/optimization.jpg",
-      "technologies": ["Lighthouse", "Webpack", "Performance Profiling"],
       "popular": false
     },
     {
@@ -45,7 +42,6 @@
       "category": "Support",
       "sales": 20,
       "image": "/src/assets/services/maintenance.jpg",
-      "technologies": ["Git", "Debugging", "Version Control"],
       "popular": true
     },
     {
@@ -57,7 +53,6 @@
       "category": "Security",
       "sales": 10,
       "image": "/src/assets/services/security.jpg",
-      "technologies": ["OWASP", "XSS", "SQL Injection", "Security Testing"],
       "popular": true
     },
     {
@@ -69,7 +64,6 @@
       "category": "Integration",
       "sales": 10,
       "image": "/src/assets/services/api.jpg",
-      "technologies": ["REST API", "Fetch", "Axios", "JSON"],
       "popular": false
     },
     {
@@ -81,7 +75,6 @@
       "category": "Marketing",
       "sales": 0,
       "image": "/src/assets/services/landing.jpg",
-      "technologies": ["HTML", "CSS", "Animations", "SEO Basics"],
       "popular": false
     },
     {
@@ -93,7 +86,6 @@
       "category": "Analytics",
       "sales": 0,
       "image": "/src/assets/services/analytics.jpg",
-      "technologies": ["Google Analytics", "Events", "Tracking Scripts"],
       "popular": false
     },
     {
@@ -105,7 +97,6 @@
       "category": "Development",
       "sales": 20,
       "image": "/src/assets/services/console.jpg",
-      "technologies": ["Python"],
       "popular": false
     }
   ]
