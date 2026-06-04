@@ -22,6 +22,7 @@
     flex-direction: column; 
     align-items: center; 
     justify-content: center;
+    animation: fadeInDropdown var(--transition-normal);
 }
 
 /* Toggle button */
