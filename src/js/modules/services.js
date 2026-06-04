@@ -67,7 +67,7 @@ export function renderServices(id, servicesList) {
 
         // Generate HTML
         return `
-            <a href="/service.html?id=${service.id}" style="text-decoration: none;">
+            <a href="/service.html?id=${service.id}" style="text-decoration: none;" target="_blank">
                 <div class="service-card" data-services-id='${service.id}'>
                     <div class="badges-container">${badges}</div>
                     <h3>${service.title}</h3>
