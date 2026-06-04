@@ -33,7 +33,7 @@
     text-align: center;
     transition: all var(--transition-normal);
     max-height: 390px;
-    margin: var(--spacing-s) var(--spacing-m);
+    margin: var(--spacing-m) var(--spacing-m);
 }
 
 .service-card:hover{
@@ -67,5 +67,10 @@
 
 .service-heading {
     margin: var(--spacing-m) 0;
+    text-align: center;
+}
+
+.not-found-message {
+    color: var(--error-color);
     text-align: center;
 }
