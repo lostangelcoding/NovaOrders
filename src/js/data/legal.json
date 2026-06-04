@@ -1,0 +1,54 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: June 2026",
+    "sections": [
+      {
+        "heading": "1. Data Collection & Processing",
+        "text": "When you submit a project request through our contact form, we collect your first name, last name, email address, and project requirements. This data is collected and processed securely using EmailJS for the sole purpose of handling your order."
+      },
+      {
+        "heading": "2. Order Notifications & Automation",
+        "text": "Upon submitting the form, our automated system triggers order tracking notifications. You will receive an email titled 'Order Received' confirming your submission, while our team at Lost@ngel's Coding receives a notification titled 'New Order!' to begin processing your request."
+      },
+      {
+        "heading": "3. Data Use & Security",
+        "text": "Your personal data and project details are used exclusively by Lost@ngel (Lost@ngel's Coding) to communicate with you and deliver the requested services. We do not share, sell, or disclose your information to any third parties."
+      },
+      {
+        "heading": "4. No Tracking Cookies",
+        "text": "Our website does not use any tracking cookies, marketing pixels, or analytics software. Your browsing experience and data remain completely private and confidential."
+      },
+      {
+        "heading": "5. Contact Information",
+        "text": "If you have any questions regarding your data privacy or wish to request the deletion of your messages, please contact us directly at angelcodestudio@gmail.com."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "updated": "Last updated: June 2026",
+    "sections": [
+      {
+        "heading": "1. Order Execution, Timeline & Impediments",
+        "text": "All services provided by Lost@ngel (Lost@ngel's Coding) are custom-built. Due to security protocols and the development process, standard delivery takes between 6 to 13 business days from the moment the project details are finalized. In the event that a project cannot be completed due to unforeseen technical complications or inability to fulfill the requests, Lost@ngel will immediately notify the client. In such cases, the client retains the right to decide on the next course of action, including modifying the project requirements or canceling the order."
+      },
+      {
+        "heading": "2. Revision Policy",
+        "text": "We strive for perfection. Revisions and corrections are completely free of charge if the delivered work does not meet the initial requirements and specifications provided by the client in the order form."
+      },
+      {
+        "heading": "3. Payment & File Delivery",
+        "text": "Our workflow operates on a 'Payment Upon Approval' basis. The client is required to settle the payment only after reviewing and accepting the final project preview. Final project files will be securely sent to the client immediately after the payment is successfully processed."
+      },
+      {
+        "heading": "4. Intellectual Property & Copyrights",
+        "text": "Copyright ownership is determined entirely by the client. Upon receiving full payment, all agreed intellectual property rights regarding the delivered project and source code are handled according to the client's preferences and final specifications."
+      },
+      {
+        "heading": "5. Limitation of Liability",
+        "text": "Services provided by Lost@ngel's Coding are delivered 'as is'. Lost@ngel shall not be held liable for any damages, data loss, or issues arising from the external deployment or misuse of the final files by the client."
+      }
+    ]
+  }
+}
