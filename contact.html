@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with our team. Contact NovaOrders for inquiries and support.">
     <title>NovaOrders</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="shortcut icon" href="/src/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/css/main.css">
 </head>
-<body class="flex-column">
+<body class="flex-column" data-page="contact">
     <!-- Header -->
     <header id="header" class="flex-between">
 
@@ -25,6 +26,14 @@
     </footer>
 
     <!-- JavaScript -->
-     <script type="module" src="/src/js/index.js"></script>
+    <script type="module" src="/src/js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "_4A0vLC-JhlU5qTXi",
+          });
+       })();
+    </script>
 </body>
 </html>
