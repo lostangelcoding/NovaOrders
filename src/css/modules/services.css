@@ -74,3 +74,34 @@
     color: var(--error-color);
     text-align: center;
 }
+
+.service-help {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--surface-color);
+    padding: var(--spacing-l) var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-color);
+    text-align: center;
+    margin: var(--spacing-m) 0 0 0; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.service-help p {
+    color: var(--text-main);
+    font-size: var(--text-s);
+    line-height: var(--line-height-normal);
+    margin: 0; 
+}
+
+.service-help .back-to-services {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: var(--font-weight-semibold);
+    transition: color var(--transition-fast);
+}
+
+.service-help .back-to-services:hover {
+    color: var(--accent-hover);
+    text-decoration: none;
+}
