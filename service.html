@@ -8,33 +8,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="shortcut icon" href="/src/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/css/main.css">
-    <link rel="canonical" href="">
+    <link class="canonical" href="">
 </head>
 <body class="flex-column" data-page="service">
-    <!-- Header -->
     <header id="header" class="flex-between">
 
     </header>
 
-    <!-- Main -->
     <main>
+        <section id="service-preview" class="service-preview">
+            <div id="service">
 
+            </div>
+            <div class="service-help">
+                <p>If you change your mind, <a href="/services.html" class="back-to-services">go back to services</a>.</p>
+            </div>
+        </section>
+
+        <section class="order-form">
+            <form id="service-order-form" method="post">
+                <input type="hidden" id="selected-service" name="service" value="">
+            
+                <div class="form-group">
+                    <label for="service-name">Name</label>
+                    <input type="text" id="service-name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service-email">Email</label>
+                    <input type="email" id="service-email" name="email" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="service-message">Message</label>
+                    <textarea id="service-message" name="message" required></textarea>
+                </div>
+            
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+        <div id="toast" class="toast"></div>
     </main>
 
-    <!-- Footer -->
     <footer id="footer" class="flex">
 
     </footer>
 
-    <!-- JavaScript -->
     <script type="module" src="/src/js/index.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init({
-            publicKey: "_4A0vLC-JhlU5qTXi",
-          });
-       })();
-    </script>
 </body>
 </html>
