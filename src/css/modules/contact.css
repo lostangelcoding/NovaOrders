@@ -1,0 +1,103 @@
+.nova-contact-page .services-preview {
+    width: 100%;
+    margin: 0;
+    display: grid;
+}
+
+.nova-contact-page .contact-form {
+    width: 100%;
+    margin: 0;
+    padding: var(--spacing-l);
+    background-color: var(--secondary-bg);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#contact-order-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nova-contact-page .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-m);
+}
+
+.nova-contact-page .form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.nova-contact-page .form-group label {
+    color: var(--text-main);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--text-s);
+    margin-bottom: var(--spacing-s);
+    line-height: var(--line-height-tight);
+}
+
+.nova-contact-page .form-group input[type="text"],
+.nova-contact-page .form-group input[type="email"],
+.nova-contact-page .form-group textarea {
+    width: 100%;
+    padding: var(--spacing-m);
+    background-color: var(--surface-color);
+    border: var(--border-width) solid var(--accent-color);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: var(--text-s);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.nova-contact-page .form-group input:focus,
+.nova-contact-page .form-group textarea:focus {
+    outline: none;
+    border-color: var(--border-color);
+    box-shadow: var(--shadow-color);
+}
+
+.nova-contact-page .form-group textarea {
+    flex-grow: 1;
+    min-height: 140px;
+    resize: none; 
+}
+
+.nova-contact-page .btn-submit {
+    width: 100%;
+    padding: var(--spacing-m);
+    background-color: var(--accent-color);
+    color: var(--text-main);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    font-size: var(--text-s);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    margin-top: var(--spacing-m);
+}
+
+.nova-contact-page .btn-submit:hover {
+    background-color: var(--accent-hover);
+}
+
+.nova-contact-page .btn-submit:active {
+    background-color: var(--accent-active);
+    transform: scale(0.99);
+}
+
+.nova-contact-page .btn-submit:disabled {
+    opacity: var(--opacity-disabled);
+    cursor: not-allowed;
+    transform: none;
+    background-color: var(--accent-color);
+}
