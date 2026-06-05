@@ -1,7 +1,124 @@
 {
-    "question": [
-        {
-            
-        }
-    ]
+  "faq": [
+    {
+      "id": 1,
+      "category": "general",
+      "question": "What is NovaOrders?",
+      "answer": "NovaOrders is a modern digital platform designed to streamline the process of ordering custom IT services, software development, and digital assets with full automation and tracking."
+    },
+    {
+      "id": 2,
+      "category": "general",
+      "question": "Who is behind NovaOrders?",
+      "answer": "All projects and services are engineered and executed by NovaOrders (originally founded as AngelCodeStudio), focusing on high-end custom web and software engineering."
+    },
+    {
+      "id": 3,
+      "category": "general",
+      "question": "Can I request a custom service not listed on the website?",
+      "answer": "Absolutely. If you have unique requirements or a complex project that doesn't fit standard categories, you can use our dynamic inquiry form to describe your needs, and we will evaluate it."
+    },
+    {
+      "id": 4,
+      "category": "general",
+      "question": "How do I know my inquiry was successfully received?",
+      "answer": "As soon as you click submit, our system triggers an automated email notification titled 'We received your inquiry! - NovaOrders' with your project details, while our team gets a priority alert."
+    },
+    {
+      "id": 5,
+      "category": "general",
+      "question": "Is there a limit to how many inquiries I can submit?",
+      "answer": "There is no strict limit, but we highly recommend submitting one comprehensive inquiry per project to ensure the structure and requirements remain clear during review."
+    },
+    {
+      "id": 6,
+      "category": "technical",
+      "question": "What technology stack do you use for development?",
+      "answer": "We specialize in modern technologies including HTML5, CSS3 (using advanced CSS variables and architecture), JavaScript (ES Modules), Google Apps Script for serverless backends, and responsive design systems."
+    },
+    {
+      "id": 7,
+      "category": "technical",
+      "question": "Are the delivered websites fully responsive and mobile-friendly?",
+      "answer": "Yes, every interface we build is designed with a mobile-first approach, ensuring seamless performance and perfect visuals across all devices, screens, and modern browsers."
+    },
+    {
+      "id": 8,
+      "category": "technical",
+      "question": "Do you provide hosting and domain setup?",
+      "answer": "While we primarily focus on engineering and source code delivery, we can assist and guide you through the process of setting up production environments, hosting platforms, and custom domains."
+    },
+    {
+      "id": 9,
+      "category": "technical",
+      "question": "How is my project data securely handled?",
+      "answer": "Your requirements and contact details are processed securely using Google Cloud Infrastructure (Google Apps Script). We enforce strict security protocols and never expose your endpoints or raw data."
+    },
+    {
+      "id": 10,
+      "category": "technical",
+      "question": "Can you integrate third-party APIs into my project?",
+      "answer": "Yes, we have extensive experience in connecting frontends with external APIs, automation services, databases, serverless webhooks, and modern cloud ecosystems."
+    },
+    {
+      "id": 11,
+      "category": "process",
+      "question": "What is the typical delivery timeline for a project?",
+      "answer": "Standard delivery takes between 6 to 13 business days. This precise timeline allows us to follow strict security audits, thorough testing, and clean refactoring before delivery."
+    },
+    {
+      "id": 12,
+      "category": "process",
+      "question": "What happens right after I submit the inquiry form?",
+      "answer": "Our system captures the data, logs it securely, and triggers an autoresponder. Our engineering team reviews the scope within 24-48 hours and reaches out via email to discuss the technical roadmap."
+    },
+    {
+      "id": 13,
+      "category": "process",
+      "question": "What if a project faces unforeseen technical roadblocks?",
+      "answer": "If a project encounters exceptional technical complications making it unfeasible, NovaOrders will notify you immediately. You retain full right to either adjust the scope or cancel the order completely."
+    },
+    {
+      "id": 14,
+      "category": "process",
+      "question": "Are revisions and adjustments free of charge?",
+      "answer": "Yes. Revisions are 100% free of charge as long as the requested corrections align with the initial requirements and specifications provided in the original inquiry form."
+    },
+    {
+      "id": 15,
+      "category": "process",
+      "question": "Can I change my project requirements mid-development?",
+      "answer": "Minor adjustments can usually be integrated. However, significant changes to the core architecture or feature set might require a re-evaluation of the delivery timeline and project scope."
+    },
+    {
+      "id": 16,
+      "category": "legal",
+      "question": "How does the payment structure work?",
+      "answer": "We operate under a customer-first 'Payment Upon Approval' model. You only settle the invoice after reviewing and fully approving the final interactive preview of the product."
+    },
+    {
+      "id": 17,
+      "category": "legal",
+      "question": "When and how do I receive the final source code files?",
+      "answer": "Immediately after the payment is successfully processed, our system securely packages and transmits all final source code, assets, and deployment documentation straight to your email."
+    },
+    {
+      "id": 18,
+      "category": "legal",
+      "question": "Who owns the intellectual property and copyright of the code?",
+      "answer": "You do. Upon receipt of full payment, all agreed intellectual property, commercial usage rights, and source code ownership transfer completely to you, handled according to your preferences."
+    },
+    {
+      "id": 19,
+      "category": "legal",
+      "question": "Does NovaOrders use any tracking cookies or user analytics?",
+      "answer": "No. Our platform values privacy above all else. We do not inject marketing pixels, tracking cookies, or heavy analytics scripts, keeping your browsing experience completely confidential."
+    },
+    {
+      "id": 20,
+      "category": "legal",
+      "question": "What is the limitation of liability for delivered files?",
+      "answer": "All services are delivered on an 'as is' basis. NovaOrders is responsible for building according to spec, but we cannot be held liable for external deployment failures, server misconfigurations, or subsequent misuse of files."
+    }
+  ]
 }
