@@ -112,7 +112,7 @@ npm install
 Open src/js/modules/email.js and set your Google Apps Script production URL (/exec endpoint):
 
 ```JavaScript
-const APPS_SCRIPT_URL = "[https://script.google.com/macros/s/.../exec](https://script.google.com/macros/s/.../exec)";
+const SCRIPT_URL = "[https://script.google.com/macros/s/.../exec](https://script.google.com/macros/s/.../exec)";
 ```
 
 4. Serve the Application Locally:
