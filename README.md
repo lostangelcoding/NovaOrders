@@ -131,11 +131,14 @@ npx serve
 Code quality and style consistency are automatically enforced via ESLint. A GitHub Actions workflow ensures all checks pass before merges.
 
 To execute code analysis manually:
-Bash
+
+```Bash
 
 npm run lint
+```
 
 **⚠️ Educational Disclaimer & Incident Response**
+
 This repository is an open-source educational project developed for portfolio and R&D purposes. It serves as a testing ground for vanilla web technologies and security practices. 
 
 In the event of anomalous traffic or spam detection on the production API gateway, an automated/manual Incident Response procedure is in place to instantly archive the current deployment deployment, rotate the endpoint keys, and mitigate service abuse.
