@@ -5,15 +5,15 @@
     "sections": [
       {
         "heading": "1. Data Collection & Processing",
-        "text": "When you submit a project request through our contact form, we collect your first name, last name, email address, and project requirements. This data is collected and processed securely using EmailJS for the sole purpose of handling your order."
+        "text": "When you submit a project request through our contact form, we collect your name, email address, selected service, and project requirements. This data is collected and processed securely using Google Cloud Infrastructure (Google Apps Script) for the sole purpose of handling your order."
       },
       {
         "heading": "2. Order Notifications & Automation",
-        "text": "Upon submitting the form, our automated system triggers order tracking notifications. You will receive an email titled 'Order Received' confirming your submission, while our team at Lost@ngel's Coding receives a notification titled 'New Order!' to begin processing your request."
+        "text": "Upon submitting the form, our automated system triggers order tracking notifications. You will receive an automated email titled 'We received your inquiry! - NovaOrders' confirming your submission, while our team at NovaOrders receives a notification titled '🚀 New Project Inquiry' to begin processing your request."
       },
       {
         "heading": "3. Data Use & Security",
-        "text": "Your personal data and project details are used exclusively by Lost@ngel (Lost@ngel's Coding) to communicate with you and deliver the requested services. We do not share, sell, or disclose your information to any third parties."
+        "text": "Your personal data and project details are used exclusively by NovaOrders to communicate with you and deliver the requested services. We do not share, sell, or disclose your information to any third parties."
       },
       {
         "heading": "4. No Tracking Cookies",
@@ -31,7 +31,7 @@
     "sections": [
       {
         "heading": "1. Order Execution, Timeline & Impediments",
-        "text": "All services provided by Lost@ngel (Lost@ngel's Coding) are custom-built. Due to security protocols and the development process, standard delivery takes between 6 to 13 business days from the moment the project details are finalized. In the event that a project cannot be completed due to unforeseen technical complications or inability to fulfill the requests, Lost@ngel will immediately notify the client. In such cases, the client retains the right to decide on the next course of action, including modifying the project requirements or canceling the order."
+        "text": "All services provided by NovaOrders are custom-built. Due to security protocols and the development process, standard delivery takes between 6 to 13 business days from the moment the project details are finalized. In the event that a project cannot be completed due to unforeseen technical complications or inability to fulfill the requests, NovaOrders will immediately notify the client. In such cases, the client retains the right to decide on the next course of action, including modifying the project requirements or canceling the order."
       },
       {
         "heading": "2. Revision Policy",
@@ -47,7 +47,7 @@
       },
       {
         "heading": "5. Limitation of Liability",
-        "text": "Services provided by Lost@ngel's Coding are delivered 'as is'. Lost@ngel shall not be held liable for any damages, data loss, or issues arising from the external deployment or misuse of the final files by the client."
+        "text": "Services provided by NovaOrders are delivered 'as is'. NovaOrders shall not be held liable for any damages, data loss, or issues arising from the external deployment or misuse of the final files by the client."
       }
     ]
   }
