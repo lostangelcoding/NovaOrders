@@ -16,7 +16,6 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 ├── .github/
 │   └── workflows/
 │       └── ci.yml         # CI Pipeline (GitHub Actions)
-├── docs/                  # Project documentation
 ├── src/
 │   ├── assets/            # Static assets (favicons, images, branding)
 │   │   ├── favicon.png
