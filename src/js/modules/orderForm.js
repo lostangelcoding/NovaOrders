@@ -61,12 +61,13 @@ async function handleFormSubmit(event) {
 
 // FUNCTION: Find the form on the page and attach the submit listener
 function initOrderForm() {
-  // Check for both possible form IDs dynamically
-  const form = document.getElementById('order-form') || document.getElementById('contact-order-form');
+  // Check for the specific form ID used in service.html
+  const form = document.getElementById('service-form'); 
   
+
   // Exit if no form is found on the current subpage
   if (!form) {
-    console.warn('[NovaOrders]: Form element not found on this page.');
+    console.warn('[NovaOrders]: Form element (#service-order-form) not found on this page.');
     return;
   }
 
@@ -74,9 +75,9 @@ function initOrderForm() {
   form.addEventListener('submit', handleFormSubmit);
 }
 
-// SAFE INITIALIZATION: Run the script safely whether DOM is ready or still loading
+// SAFE INITIALIZATION: Wait 100ms to ensure dynamic HTML/components are fully rendered
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initOrderForm);
+  document.addEventListener('DOMContentLoaded', () => setTimeout(initOrderForm, 100));
 } else {
-  initOrderForm();
+  setTimeout(initOrderForm, 100);
 }
