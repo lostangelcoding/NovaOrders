@@ -2,12 +2,17 @@ const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9SfqA_NLIS0h5jAX4-
 
 export async function sendEmail(formData) {
   try {
-    await fetch(SCRIPT_URL, {
+    // Zmieniamy na zwykły fetch z poprawną obsługą CORS
+    const response = await fetch(SCRIPT_URL, {
       method: 'POST',
-      body: formData,
-      mode: 'no-cors'
+      mode: 'cors', 
     });
-    return true; 
+
+    if (response.ok) {
+      return true;
+    }
+    
+    return false;
   } catch (error) {
     console.error('[Email Service Error]:', error);
     return false; 
