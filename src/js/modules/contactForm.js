@@ -1,6 +1,6 @@
-import { sendEmail } from "./email.js";
-import { showToast } from "../utils/toast.js"; 
-import { sanitizeInput, validateEmail } from "../utils/security.js";
+import { sendEmail } from "/src/js/modules/email.js";
+import { showToast } from "/src/js/utils/toast.js"; 
+import { sanitizeInput, validateEmail } from "/src/js/utils/security.js";
 
 // FUNCTION: Change the submit button text and disabled state during API call
 function setFormLoadingState(formElement, isLoading) {

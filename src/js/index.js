@@ -1,14 +1,14 @@
 // Imports
-import { setSelectedService } from "./modules/orderForm.js";
-import { handleSearchFromURL } from "./modules/search.js";
-import { initServiceFilters } from "./modules/serviceFilter.js";
-import { initDropdownFilter } from "./modules/dropdown.js";
-import { fetchServices, renderServices } from "./modules/services.js";
-import { loadPartial } from "./core/loadPartials.js";
-import { initLegalModule } from "./modules/legal.js";
-import { initFaqModule } from "./modules/faq.js";
-import { initContactForm } from "./modules/contactForm.js";
-import { initPageTitle } from "./utils/pageTitle.js";
+import { setSelectedService } from "/src/js/modules/orderForm.js";
+import { handleSearchFromURL } from "/src/js/modules/search.js";
+import { initServiceFilters } from "/src/js/modules/serviceFilter.js";
+import { initDropdownFilter } from "/src/js/modules/dropdown.js";
+import { fetchServices, renderServices } from "/src/js/modules/services.js";
+import { loadPartial } from "/src/js/core/loadPartials.js";
+import { initLegalModule } from "/src/js/modules/legal.js";
+import { initFaqModule } from "/src/js/modules/faq.js";
+import { initContactForm } from "/src/js/modules/contactForm.js";
+import { initPageTitle } from "/src/js/utils/pageTitle.js";
 
 const page = document.body.dataset.page; 
 
