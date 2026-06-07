@@ -38,7 +38,7 @@
     margin: var(--spacing-m) var(--spacing-m);
 }
 
-.service-card:hover{
+[data-page="services"] .service-card:hover{
     background-color: var(--surface-color);
     transform: translateY(-16px);
 }
@@ -107,7 +107,12 @@
     color: var(--accent-hover);
     text-decoration: none;
 }
+
 [data-page="service"] .service-card{
     width: 100%;
     max-width: none;
+}
+
+[data-page="service"] .service-card:hover{
+    background-color: var(--surface-color);
 }
