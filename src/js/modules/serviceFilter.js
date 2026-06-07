@@ -38,4 +38,13 @@ export function initServiceFilters(allServices, containerId) {
             renderServices(containerId, allServices);
         });
     }
+
+    const filterToggle = document.querySelector('.filter-toggle');
+
+    filterToggle.addEventListener('click', () => {
+
+        filterToggle.classList.toggle('active');
+    
+    });
 }
+

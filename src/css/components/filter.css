@@ -47,6 +47,15 @@
     box-shadow: var(--shadow-color);
 }
 
+.filter-toggle i {
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+}
+
+.filter-toggle.active i {
+    transform: rotate(180deg); 
+}
+
 /* Clear button */
 .filter-clear {
     width: 100%;
