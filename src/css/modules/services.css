@@ -24,6 +24,8 @@
 }
 
 .service-card {
+    width: 100%;
+    max-width: 350px;
     background-color: var(--secondary-bg);
     border: 1px solid var(--surface-color);
     padding: var(--spacing-l);
