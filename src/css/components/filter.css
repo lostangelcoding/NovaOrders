@@ -31,13 +31,14 @@
     border: none;
     border-radius: 16px;
     padding: 16px 20px;
-    background-color: var(--accent-color);
+    background-color: var(--secondary-bg);
     transition: all var(--transition-normal);
+    border: var(--border-width) solid var(--border-color);
 }
 
 .filter-toggle:hover {
     cursor: pointer;
-    background-color: var(--accent-hover);
+    background-color: var(--surface-color);
     box-shadow: var(--shadow-color);
 }
 
