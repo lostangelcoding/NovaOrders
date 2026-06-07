@@ -38,11 +38,6 @@
     margin: var(--spacing-m) var(--spacing-m);
 }
 
-.service-card:hover{
-    background-color: var(--surface-color);
-    transform: translateY(-16px);
-}
-
 .service-card img {
     width: 100%;
     max-height: 150px; 
@@ -106,4 +101,18 @@
 .service-help .back-to-services:hover {
     color: var(--accent-hover);
     text-decoration: none;
+}
+
+[data-page="service"] .service-card{
+    width: 100%;
+    max-width: none;
+}
+
+[data-page="service"] .service-card:hover{
+    background-color: var(--surface-color);
+}
+
+[data-page="services"] .service-card:hover, [data-page="home"] .service-card:hover{
+    background-color: var(--surface-color);
+    transform: translateY(-16px);
 }
