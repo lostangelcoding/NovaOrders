@@ -107,3 +107,7 @@
     color: var(--accent-hover);
     text-decoration: none;
 }
+[data-page="service"] .service-card{
+    width: 100%;
+    max-width: none;
+}
