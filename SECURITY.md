@@ -11,10 +11,13 @@ currently being supported with security updates.
 | 1.0.1   | :x:                |
 | < 1.0   | :x:                |
 
-## Reporting a Vulnerability
+## Reporting a Vulnerability or Bug
 
-Use this section to tell people how to report a vulnerability.
+If you find any bugs, functional issues, or critical security vulnerabilities, please **do not** open a public GitHub issue. Instead, use our official web contact form to report it safely and directly to us.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+### How to report:
+1. Go to our **Email:** [angelcodestudio@gmail.com](mailto:angelcodestudio@gmail.com)
+2. Select the appropriate topic (e.g., "Bug Report" or "Security Issue").
+3. Provide a detailed description of the issue and steps to reproduce it.
+
+Thank you for helping us keep this project safe and stable!
