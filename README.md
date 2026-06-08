@@ -92,7 +92,7 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 1. Clone the repository:
 
 ```Bash
-git clone [https://github.com/your-username/novaorders.git](https://github.com/your-username/novaorders.git)
+git clone https://github.com/lostangelcoding/novaorders.git
 cd novaorders
 ```
 
