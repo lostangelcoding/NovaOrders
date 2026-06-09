@@ -111,7 +111,7 @@ npm install
 Open src/js/modules/email.js and set your Google Apps Script production URL (/exec endpoint):
 
 ```JavaScript
-const SCRIPT_URL = "[https://script.google.com/macros/s/.../exec](https://script.google.com/macros/s/.../exec)";
+const SCRIPT_URL = "https://script.google.com/macros/s/.../exec";
 ```
 
 4. Serve the Application Locally:
@@ -132,7 +132,6 @@ Code quality and style consistency are automatically enforced via ESLint. A GitH
 To execute code analysis manually:
 
 ```Bash
-
 npm run lint
 ```
 
