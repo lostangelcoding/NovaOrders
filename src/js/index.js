@@ -40,11 +40,11 @@ function handleServicesRendering(page, allServices) {
 }
 
 async function initPartials(page) {
-    await loadPartial('header', '/src/partials/header.html');
-    await loadPartial('footer', '/src/partials/footer.html');
+    await loadPartial('header', '/partials/header.html');
+    await loadPartial('footer', '/partials/footer.html');
 
     if (page === "services" || page === "service") {
-        await loadPartial('header-services', '/src/partials/header-services.html');
+        await loadPartial('header-services', '/partials/header-services.html');
     }
 }
 
