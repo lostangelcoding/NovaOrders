@@ -6,7 +6,7 @@ export async function initLegalModule(pageType) {
   if (!titleEl || !updatedEl || !contentEl) return;
 
   try {
-    const response = await fetch('/src/js/data/legal.json');
+    const response = await fetch('/data/legal.json');
     if (!response.ok) throw new Error(`Failed to fetch legal data: ${response.status}`);
     
     const data = await response.json();

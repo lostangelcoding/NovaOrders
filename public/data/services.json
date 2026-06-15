@@ -7,7 +7,7 @@
       "priceFrom": 200,
       "priceTo": 400,
       "category": "Development",
-      "image": "/src/assets/services/web-dev.jpg",
+      "image": "/services/web-dev.jpg",
       "sales": 30,
       "popular": true
     },
@@ -19,7 +19,7 @@
       "priceTo": 250,
       "category": "Development",
       "sales": 40,
-      "image": "/src/assets/services/bot-dev.jpg",
+      "image": "/services/bot-dev.jpg",
       "popular": false
     },
     {
@@ -30,7 +30,7 @@
       "priceTo": 150,
       "category": "Optimization",
       "sales": 0,
-      "image": "/src/assets/services/optimization.jpg",
+      "image": "/services/optimization.jpg",
       "popular": false
     },
     {
@@ -41,7 +41,7 @@
       "priceTo": 120,
       "category": "Support",
       "sales": 20,
-      "image": "/src/assets/services/maintenance.jpg",
+      "image": "/services/maintenance.jpg",
       "popular": true
     },
     {
@@ -52,7 +52,7 @@
       "priceTo": 300,
       "category": "Security",
       "sales": 10,
-      "image": "/src/assets/services/security.jpg",
+      "image": "/services/security.jpg",
       "popular": true
     },
     {
@@ -63,7 +63,7 @@
       "priceTo": 250,
       "category": "Integration",
       "sales": 10,
-      "image": "/src/assets/services/api.jpg",
+      "image": "/services/api.jpg",
       "popular": false
     },
     {
@@ -74,7 +74,7 @@
       "priceTo": 150,
       "category": "Marketing",
       "sales": 0,
-      "image": "/src/assets/services/landing.jpg",
+      "image": "/services/landing.jpg",
       "popular": false
     },
     {
@@ -85,7 +85,7 @@
       "priceTo": 130,
       "category": "Analytics",
       "sales": 0,
-      "image": "/src/assets/services/analytics.jpg",
+      "image": "/services/analytics.jpg",
       "popular": false
     },
     {
@@ -96,7 +96,7 @@
       "priceTo": 200,
       "category": "Development",
       "sales": 20,
-      "image": "/src/assets/services/console.jpg",
+      "image": "/services/console.jpg",
       "popular": false
     }
   ]

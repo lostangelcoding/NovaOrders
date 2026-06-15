@@ -4,7 +4,7 @@ export async function fetchServices() {
     if (serviceCache) return serviceCache;
 
     try {
-        const response = await fetch('/src/js/data/services.json');
+        const response = await fetch('/data/services.json');
         
         if (!response.ok) {
             console.error(`❌ Network Error: Failed to load services JSON. Status: ${response.status}`);

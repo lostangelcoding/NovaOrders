@@ -4,7 +4,7 @@ export async function initFaqModule() {
   if (!faqContentEl) return;
 
   try {
-    const response = await fetch('/src/js/data/faq.json');
+    const response = await fetch('/data/faq.json');
     if (!response.ok) throw new Error(`Failed to fetch FAQ data: ${response.status}`);
 
     const data = await response.json();
