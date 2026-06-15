@@ -57,10 +57,7 @@ export function initContactForm() {
   const form = document.getElementById('contact-order-form') || document.getElementById('order-form');
   
   // Exit if no form is found on the current subpage
-  if (!form) {
-    console.warn('[NovaOrders]: Contact form element not found on this page.');
-    return;
-  }
+  if (!form) return;
 
   // Listen for the submit event
   form.addEventListener('submit', handleFormSubmit);

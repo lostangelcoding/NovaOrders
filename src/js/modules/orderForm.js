@@ -66,10 +66,7 @@ function initOrderForm() {
   
 
   // Exit if no form is found on the current subpage
-  if (!form) {
-    console.warn('[NovaOrders]: Form element (#service-order-form) not found on this page.');
-    return;
-  }
+  if (!form) return;
 
   // Listen for the submit event
   form.addEventListener('submit', handleFormSubmit);
