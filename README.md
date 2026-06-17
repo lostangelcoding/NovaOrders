@@ -13,78 +13,57 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 ## 📁 Project Structure
 
 ```text
-├── .github/
-│   └── workflows/
-│       └── ci.yml         # CI Pipeline (GitHub Actions)
-├── src/
-│   ├── assets/            # Static assets (favicons, images, branding)
-│   │   ├── favicon.png
-│   │   ├── images/
-│   │   └── services/
-│   ├── css/
-│   │   ├── main.css       # Global stylesheet (imports manager)
-│   │   ├── utils.css      # Utility classes
-│   │   ├── components/    # Reusable UI component styles
-│   │   │   ├── badge.css
-│   │   │   ├── cta.css
-│   │   │   ├── filter.css
-│   │   │   ├── search.css
-│   │   │   ├── switch.css
-│   │   │   └── toast.css
-│   │   ├── core/          # Base configurations
-│   │   │   ├── animations.css
-│   │   │   ├── base.css
-│   │   │   ├── reset.css
-│   │   │   ├── typography.css
-│   │   │   └── variables.css
-│   │   └── modules/       # Page-specific views styling
-│   │       ├── about.css
-│   │       ├── contact.css
-│   │       ├── faq.css
-│   │       ├── features.css
-│   │       ├── footer.css
-│   │       ├── header.css
-│   │       ├── hero.css
-│   │       ├── order-form.css
-│   │       └── services.css
-│   ├── js/
-│   │   ├── index.js       # Main entry point & application router
-│   │   ├── core/          # Core engine (layout & template loaders)
-│   │   │   └── loadPartials.js
-│   │   ├── data/          # App state & data stores (JSON)
-│   │   │   ├── faq.json
-│   │   │   ├── legal.json
-│   │   │   └── services.json
-│   │   ├── modules/       # Business logic handlers
-│   │   │   ├── contactForm.js
-│   │   │   ├── dropdown.js
-│   │   │   ├── email.js
-│   │   │   ├── faq.js
-│   │   │   ├── legal.js
-│   │   │   ├── orderForm.js
-│   │   │   ├── search.js
-│   │   │   ├── serviceFilter.js
-│   │   │   └── services.js
-│   │   └── utils/         # Helper utilities (security, toasts, metadata)
-│   │       ├── pageTitle.js
-│   │       ├── security.js
-│   │       └── toast.js
-│   └── partials/          # Injectable HTML layouts
-│       ├── footer.html
-│       ├── header-services.html
-│       └── header.html
-├── .gitattributes
-├── .gitignore
-├── contact.html           # Contact Form Page
-├── eslint.config.mjs      # Linter configuration
-├── faq.html               # Frequently Asked Questions Page
-├── index.html             # Homepage / Landing Page
-├── package.json           # Node.js dependencies and scripts configuration
-├── package-lock.json      # Locked versions for consistent CI environments
-├── privacy.html           # Privacy Policy View
-├── service.html           # Dynamic Order Checkout Page
-├── services.html          # Full Services Directory
-└── terms.html             # Terms of Service View
+.
+├── LICENSE                   # Project license file
+├── README.md                 # Main project documentation
+├── SECURITY.md               # Security policy guidelines
+├── contact.html              # Contact form page
+├── eslint.config.mjs         # ESLint configuration
+├── faq.html                  # Frequently Asked Questions page
+├── index.html                # Main homepage / Landing page
+├── package-lock.json         # Locked versions of Node.js dependencies
+├── package.json              # Project scripts and dependencies
+├── privacy.html              # Privacy Policy view
+├── service.html              # Dynamic checkout and order page
+├── services.html             # Full directory of offered services
+├── terms.html                # Terms of Service view
+├── vite.config.mjs           # Vite build tool configuration
+│
+├── public/                   # Static assets served directly as-is
+│   ├── favicon.png           # Website favorite icon
+│   ├── data/                 # Application data stores (JSON)
+│   │   ├── faq.json          # FAQ section data
+│   │   ├── legal.json        # Legal texts and compliance data
+│   │   └── services.json     # Services catalog data
+│   ├── images/               # Global graphic assets
+│   │   └── novaorders_logo.png
+│   ├── partials/             # Injectable HTML template fragments
+│   │   ├── footer.html       # Shared page footer
+│   │   ├── header-services.html
+│   │   └── header.html       # Shared navigation header
+│   └── services/             # Media and thumbnails for specific services
+│       ├── analytics.jpg
+│       ├── api.jpg
+│       └── ... (other service-specific images)
+│
+└── src/                      # Application source code (processed by Vite)
+    ├── css/                  # Application stylesheets
+    │   ├── main.css          # Global entry point (imports other stylesheets)
+    │   ├── utils.css         # Helper utility classes
+    │   ├── components/       # Reusable UI component styles
+    │   │   ├── badge.css, cta.css, filter.css, search.css, switch.css, toast.css
+    │   ├── core/             # Base configurations and style tokens
+    │   │   ├── animations.css, base.css, reset.css, typography.css, variables.css
+    │   └── modules/          # View-specific styles for individual pages
+    │       ├── about.css, contact.css, faq.css, features.css, footer.css, etc.
+    └── js/                   # Frontend JavaScript application logic
+        ├── index.js          # Main entry point and router
+        ├── core/             # Core application engine (layout loaders)
+        │   └── loadPartials.js
+        ├── modules/          # Feature-specific business logic handlers
+        │   ├── contactForm.js, dropdown.js, email.js, faq.js, legal.js, etc.
+        └── utils/            # Helper scripts (metadata, security, notifications)
+            ├── pageTitle.js, security.js, toast.js
 ```
 
 **🛠️ Installation & Setup**
