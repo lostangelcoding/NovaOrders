@@ -1,4 +1,4 @@
-# NovaOrders v1.0.5
+# NovaOrders v1.1.0
 
 A modern, fast, and fully modular digital services ordering platform. Built with vanilla JavaScript (ES6+), component-based CSS architecture, and a serverless backend integration via Google Apps Script.
 
@@ -93,16 +93,17 @@ Open src/js/modules/email.js and set your Google Apps Script production URL (/ex
 const SCRIPT_URL = "https://script.google.com/macros/s/.../exec";
 ```
 
-4. Serve the Application Locally:
+4. Vite Development Server Execution
 
-Since the project uses ES6 Modules (import/export), it cannot be opened directly via file://. You must serve it using a local HTTP server.
+Because the project structure is now managed by Vite, native ECMAScript 6 (ES6) Modules (import/export directives) are compiled and bundled on-the-fly via Vite's internal Hot Module Replacement (HMR) engine.
 
-- If using VS Code, install the Live Server extension and click "Go Live".
-- Alternatively, run via terminal:
+To spin up the local development environment with an active network listener, run the following command:
 
 ```Bash
-npx serve
+npm run dev
 ```
+
+Once initialized, open your browser and navigate to the local loopback address provided in the terminal output (typically http://localhost:5173).
 
 **🧪 Linting & Quality Assurance**
 
@@ -116,9 +117,13 @@ npm run lint
 
 **⚠️ Educational Disclaimer & Incident Response**
 
-This repository is an open-source educational project developed for portfolio and R&D purposes. It serves as a testing ground for vanilla web technologies and security practices. 
+This repository is maintained strictly as an open-source educational instrument engineered for research and development (R&D) benchmarking, architectural sandboxing, and modern web asset bundling experimentation. 
 
-In the event of anomalous traffic or spam detection on the production API gateway, an automated/manual Incident Response procedure is in place to instantly archive the current deployment deployment, rotate the endpoint keys, and mitigate service abuse.
+Simultaneously, it serves as a core technical asset within the author's professional engineering portfolio, demonstrating production-grade code architecture, modern build-tool integration, and standard software development workflows. 
+
+To ensure operational stability and prevent infrastructure degradation, the production API gateway is coupled with a reactive security posture. In the event of anomalous traffic surges, distributed denial-of-service (DDoS) vectors, or automated form spam injection, a dedicated Incident Response (IR) protocol is triggered. 
+
+This vector permits administrators to instantly deprecate the active deployment layer, programmatically rotate sensitive endpoint cryptographic tokens, isolate the Google Apps Script gateway, and immediately neutralize resource exploitation.
 
 **📄 License**
 
