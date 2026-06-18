@@ -101,3 +101,49 @@
     transform: none;
     background-color: var(--accent-color);
 }
+
+/* --- Tablet Devices (< 1024px) --- */
+@media (max-width: 1024px) {
+    .nova-contact-page .contact-form {
+        padding: var(--spacing-m); 
+    }
+}
+
+/* --- Mobile Devices (< 768px) --- */
+@media (max-width: 768px) {
+    .nova-contact-page .services-preview {
+        grid-template-columns: 1fr !important; 
+        gap: var(--spacing-m) !important;
+    }
+
+    .nova-contact-page .contact-form {
+        padding: var(--spacing-m) var(--spacing-s); 
+        border-radius: 8px;
+    }
+
+    .nova-contact-page .form-group {
+        margin-bottom: var(--spacing-s); 
+    }
+
+    .nova-contact-page .form-group label {
+        font-size: var(--text-xs); 
+        margin-bottom: var(--spacing-xs);
+    }
+
+    .nova-contact-page .form-group input[type="text"],
+    .nova-contact-page .form-group input[type="email"],
+    .nova-contact-page .form-group textarea {
+        padding: var(--spacing-s) var(--spacing-m); 
+        font-size: var(--text-xs); 
+    }
+
+    .nova-contact-page .form-group textarea {
+        min-height: 100px; 
+    }
+
+    .nova-contact-page .btn-submit {
+        padding: var(--spacing-s) var(--spacing-m); 
+        font-size: var(--text-xs);
+        margin-top: var(--spacing-s);
+    }
+}
