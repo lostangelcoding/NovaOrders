@@ -20,3 +20,32 @@
     color: var(--text-muted);
     margin-bottom: var(--spacing-l);
 }
+
+/* --- Tablet Devices (< 1024px) --- */
+@media (max-width: 1024px) {
+    .hero {
+        padding: var(--spacing-l) var(--spacing-m);
+    }
+
+    .hero h1 {
+        font-size: calc(var(--text-xl) * 0.9);
+    }
+}
+
+/* --- Mobile Devices (< 768px) --- */
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-m) var(--spacing-s);
+        border-radius: 12px;
+    }
+
+    .hero h1 {
+        font-size: var(--text-l);
+        margin-bottom: var(--spacing-s);
+    }
+
+    .hero p {
+        font-size: var(--text-xs);
+        margin-bottom: var(--spacing-m);
+    }
+}

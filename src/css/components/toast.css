@@ -29,3 +29,29 @@
 .toast.error {
     border-color: #ef4444;
 }
+
+/* --- Tablet Devices (< 1024px) --- */
+@media (max-width: 1024px) {
+    .toast {
+        bottom: var(--spacing-l);
+        right: var(--spacing-l); 
+    }
+}
+
+/* --- Mobile Devices (< 768px) --- */
+@media (max-width: 768px) {
+    .toast {
+        bottom: var(--spacing-m);
+        right: var(--spacing-m);
+        left: var(--spacing-m); 
+        width: auto; 
+        text-align: center; 
+        padding: var(--spacing-m) var(--spacing-m); 
+        font-size: var(--text-xs);
+        transform: translateY(30px); 
+    }
+
+    .toast.show {
+        transform: translateY(0);
+    }
+}

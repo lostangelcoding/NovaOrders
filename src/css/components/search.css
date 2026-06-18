@@ -79,3 +79,45 @@ i.fa-search {
 .search-input button[type="submit"]:active {
     background-color: var(--accent-active);
 }
+
+/* --- Tablet Devices (< 1024px) --- */
+@media (max-width: 1024px) {
+    .search-wrapper {
+        margin: 0 var(--spacing-m); 
+        max-width: 320px;
+    }
+
+    .search-input {
+        height: 42px; 
+    }
+
+    .search-input button[type="submit"] {
+        padding: 0 var(--spacing-m);
+    }
+}
+
+/* --- Mobile Devices (< 768px) --- */
+@media (max-width: 768px) {
+    .search-wrapper {
+        max-width: none; 
+        margin: 0; 
+    }
+
+    .search-input {
+        height: 40px; 
+    }
+
+    .search-input i.fa-search {
+        padding-left: var(--spacing-s); 
+    }
+
+    .search-input input[type="search"] {
+        padding: 0 var(--spacing-s); 
+        font-size: var(--text-xs);
+    }
+
+    .search-input button[type="submit"] {
+        padding: 0 var(--spacing-m);
+        font-size: var(--text-xs);
+    }
+}

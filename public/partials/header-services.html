@@ -1,8 +1,6 @@
 <div class="logo-wrapper flex-start">
     <div class="logo-header">
-        <a href="/" aria-label="NovaOrders Home">
-            <img src="/images/novaorders_logo.png" alt="NovaOrders Logo" loading="lazy">
-        </a>
+        <a href="/"><img src="/images/novaorders_logo.png" alt="NovaOrders Logo" loading="lazy"></a>
     </div>
     <div class="logo-heading">
         <h1>NovaOrders</h1>
@@ -11,116 +9,126 @@
 </div>
 
 <div class="search-wrapper flex-center">
-    <form method="get" role="search" aria-label="Site search">
+    <form method="get">
+        
         <div class="search-input">
-            <label for="search"><i class="fas fa-search" aria-hidden="true"></i><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;">Search services</span></label>
-            <input type="search" name="search" id="search" placeholder="Search services...">
+            <label for="search"><i class="fas fa-search"></i></label>
+            <input type="search" name="search" id="search">
             <button type="submit">Search</button>
         </div>
     </form>
 </div>
 
-<nav class="nav flex-end" aria-label="Main Navigation">
-    <ul>
-        <li>
-            <i class="fas fa-gear" aria-hidden="true"></i><br>
-            <a href="/services.html">Services</a>
-        </li>
-        <li>
-            <i class="fas fa-question" aria-hidden="true"></i><br>
-            <a href="/faq.html">FAQ</a>
-        </li>
-        <li>
-            <i class="fas fa-headset" aria-hidden="true"></i><br>
-            <a href="/contact.html">Contact</a>
-        </li>
-    </ul>
-</nav>
+<div class="nav flex-end">
+    <nav>
+        <ul>
+            <li>
+                <i class="fas fa-gear"></i><br>
+                <a href="/services.html">Services</a>
+            </li>
+            <li>
+                <i class="fas fa-question"></i><br>
+                <a href="/faq.html">FAQ</a>
+            </li>
+            <li>
+                <i class="fas fa-headset"></i><br>
+                <a href="/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
 
 <div class="header-actions flex-end">
     <div class="filter-dropdown">
-        <button type="button" class="filter-toggle" data-filter-toggle aria-haspopup="true" aria-expanded="false" aria-controls="filter-menu-items">
-            Filters <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        <button type="button" class="filter-toggle" data-filter-toggle>
+            Filters <i class="fas fa-chevron-down"></i>
         </button>
-        <div id="filter-menu-items" class="filter-menu" data-filter-menu>
-            <table role="presentation">
+        <div class="filter-menu" data-filter-menu>
+            <table>
                 <tr>
-                    <td><p><span aria-hidden="true">🔥</span> Popular</p></td>
+                    <td><p>🔥 Popular</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Popular" aria-label="Filter by Popular services">
+                            <input type="checkbox" value="Popular">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
                 <tr>
-                    <td><p><span aria-hidden="true">🚀</span> Sales</p></td>
+                    <td><p>🚀 Sales</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Sales" aria-label="Filter by Services on sale">
+                            <input type="checkbox" value="Sales">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
                 <tr>
-                    <td><p><span aria-hidden="true">💻</span> Development</p></td>
+                    <td><p>💻 Development</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Development" aria-label="Filter by Development services">
+                            <input type="checkbox" value="Development">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
+
                 <tr>
-                    <td><p><span aria-hidden="true">📈</span> Optimization</p></td>
+                    <td><p>📈 Optimization</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Optimization" aria-label="Filter by Optimization services">
+                            <input type="checkbox" value="Optimization">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
+
                 <tr>
-                    <td><p><span aria-hidden="true">👷</span> Support</p></td>
+                    <td><p>👷 Support</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Support" aria-label="Filter by Support services">
+                            <input type="checkbox" value="Support">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
+
                 <tr>
-                    <td><p><span aria-hidden="true">🔒</span> Security</p></td>
+                    <td><p>🔒 Security</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Security" aria-label="Filter by Security services">
+                            <input type="checkbox" value="Security">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
+
                 <tr>
-                    <td><p><span aria-hidden="true">🛜</span> Integration</p></td>
+                    <td><p>🛜 Integration</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Integration" aria-label="Filter by Integration services">
+                            <input type="checkbox" value="Integration">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
+
                 <tr>
-                    <td><p><span aria-hidden="true">📊</span> Analytics</p></td>
+                    <td><p>📊 Analytics</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Analytics" aria-label="Filter by Analytics services">
+                            <input type="checkbox" value="Analytics">
                             <span class="slider"></span>
                         </label>
                     </td>
                 </tr>
+                
                 <tr>
-                    <td><p><span aria-hidden="true">📈</span> Marketing</p></td>
+                    <td><p>📈 Marketing</p></td>
                     <td>
                         <label class="switch">
-                            <input type="checkbox" value="Marketing" aria-label="Filter by Marketing services">
+                            <input type="checkbox" value="Marketing">
                             <span class="slider"></span>
                         </label>
                     </td>
@@ -129,4 +137,26 @@
             <button type="button" class="filter-clear" data-filter-clear>Clear</button>
         </div>
     </div>
+</div>
+
+<div class="nav-mobile">
+    <nav>
+        <ul>
+            <li>
+                <a href="/services.html">
+                    <i class="fas fa-gear"></i> Services
+                </a>
+            </li>
+            <li>
+                <a href="/faq.html">
+                    <i class="fas fa-question"></i> FAQ
+                </a>
+            </li>
+            <li>
+                <a href="/contact.html">
+                    <i class="fas fa-headset"></i> Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>

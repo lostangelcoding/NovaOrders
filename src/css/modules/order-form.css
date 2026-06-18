@@ -130,3 +130,34 @@
     transform: none;
     background-color: var(--accent-color);
 }
+
+/* --- Tablet Devices (< 1024px) --- */
+@media (max-width: 1024px) {
+    [data-page="service"] main {
+        gap: var(--spacing-l);
+        margin: var(--spacing-l) auto;
+        padding: var(--spacing-m);
+    }
+
+    .order-form {
+        padding: var(--spacing-m);
+    }
+}
+
+/* --- Mobile Devices (< 768px) --- */
+@media (max-width: 768px) {
+    [data-page="service"] main {
+        grid-template-columns: 1fr; 
+        gap: var(--spacing-m);
+        margin: var(--spacing-m) auto;
+        padding: var(--spacing-m) var(--spacing-s);
+    }
+
+    .form-group textarea {
+        min-height: 120px; 
+    }
+
+    .order-form button[type="submit"] {
+        padding: var(--spacing-m) var(--spacing-s);
+    }
+}

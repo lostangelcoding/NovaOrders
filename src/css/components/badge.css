@@ -12,3 +12,28 @@
     top: -14px;
     left: 5px;
 }
+
+/* --- Tablet Devices (< 1024px) --- */
+@media (max-width: 1024px) {
+    .badge {
+        padding: 6px 8px; 
+        margin: 0 var(--spacing-xs);
+    }
+}
+
+/* --- Mobile Devices (< 768px) --- */
+@media (max-width: 768px) {
+    .badges-container {
+        position: static; 
+        margin-bottom: var(--spacing-s);
+        display: flex;
+        flex-wrap: wrap; 
+        gap: var(--spacing-xs);
+    }
+
+    .badge {
+        font-size: var(--text-xs); 
+        padding: 4px 8px;
+        margin: 0; 
+    }
+}
