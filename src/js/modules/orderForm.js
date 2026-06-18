@@ -1,6 +1,6 @@
 import { sendEmail } from "/src/js/modules/email.js";
 import { showToast } from "/src/js/utils/toast.js"; 
-import { sanitizeInput, validateEmail } from "/src/js/utils/security.js";
+import { sanitizeInput, validateEmail, checkRateLimit } from "/src/js/utils/security.js";
 
 // FUNCTION: Update the hidden input field with the chosen service name
 export function setSelectedService(serviceTitle) {
@@ -19,11 +19,44 @@ function setFormLoadingState(formElement, isLoading) {
   submitButton.textContent = isLoading ? 'Sending...' : 'Send Inquiry';
 }
 
+function startButtonCountdown(formElement, timeLeftSeconds) {
+  const submitButton = formElement.querySelector('button[type="submit"]'); 
+  if (!submitButton) return;
+
+  let secondsLeft = timeLeftSeconds;
+  submitButton.disabled = true;
+
+  if (formElement.countdownInterval) {
+    clearInterval(formElement.countdownInterval);
+  }
+
+  formElement.countdownInterval = setInterval(() => {
+    if (secondsLeft <= 0) {
+      clearInterval(formElement.countdownInterval);
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send Inquiry';
+    } else {
+      submitButton.textContent = `Wait ${secondsLeft}s`;
+      secondsLeft--;
+    }
+  }, 1000);
+}
+
 // FUNCTION: Main submit handler (Validates, sanitizes, and sends data)
 async function handleFormSubmit(event) {
-  // Step 1: Stop the browser from reloading the page (Prevents 405 error)
+  // Step 1: Stop the browser from reloading the page
   event.preventDefault(); 
   const form = event.target;
+
+  // Step 1.5: Check Rate limit (POPRAWIONE: porównanie form.id ze stringiem)
+  const cooldown = form.id === 'service-form' ? 60000 : 30000;
+  const rateLimit = checkRateLimit(form, cooldown, true);
+
+  if (rateLimit.isLimited) {
+    showToast(`⏳ Please wait ${rateLimit.timeLeft}s before submitting again.`, 'error');
+    startButtonCountdown(form, rateLimit.timeLeft);
+    return;
+  } 
 
   // Step 2: Grab input fields from the form
   const emailInput = form.querySelector('input[name="email"]');
@@ -36,7 +69,7 @@ async function handleFormSubmit(event) {
     return;
   }
 
-  // Step 4: Clean up inputs to prevent XSS attacks
+  // Step 4: Clean up inputs (Opcjonalnie: sanityzacja przed wysyłką)
   if (nameInput) nameInput.value = sanitizeInput(nameInput.value.trim());
   if (messageInput) messageInput.value = sanitizeInput(messageInput.value.trim());
 
@@ -51,28 +84,25 @@ async function handleFormSubmit(event) {
   if (success) {
     showToast('🚀 Inquiry sent successfully!', 'success');
     form.reset(); // Clear form fields
+
+    startButtonCountdown(form, cooldown / 1000);
   } else {
     showToast('❌ Something went wrong. Please try again.', 'error');
-  }
+    localStorage.removeItem(`limit_${form.id}`);
 
-  // Step 8: Remove loading status from the button
-  setFormLoadingState(form, false);
+    setFormLoadingState(form, false);
+  }
 }
 
 // FUNCTION: Find the form on the page and attach the submit listener
 function initOrderForm() {
-  // Check for the specific form ID used in service.html
   const form = document.getElementById('service-form'); 
-  
-
-  // Exit if no form is found on the current subpage
   if (!form) return;
 
-  // Listen for the submit event
   form.addEventListener('submit', handleFormSubmit);
 }
 
-// SAFE INITIALIZATION: Wait 100ms to ensure dynamic HTML/components are fully rendered
+// SAFE INITIALIZATION
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => setTimeout(initOrderForm, 100));
 } else {
