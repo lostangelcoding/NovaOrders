@@ -37,11 +37,11 @@ export function renderServices(id, servicesList, isSingleView = false) {
         let badges = '';
         
         if (service.popular) {
-            badges += '<span class="badge badge-popular">🔥 Popular</span>';
+            badges += '<span class="badge badge-popular" aria-label="Popular item"><span aria-hidden="true">🔥</span> Popular</span>';
         }
 
         if (service.sales && service.sales > 0) {
-            badges += `<span class="badge badge-discount">🏷️ Sales -${service.sales}%</span>`;
+            badges += `<span class="badge badge-discount" aria-label="Discounted by ${service.sales} percent"><span aria-hidden="true">🏷️</span> Sales -${service.sales}%</span>`;
         }
 
         let priceHTML;
@@ -50,10 +50,13 @@ export function renderServices(id, servicesList, isSingleView = false) {
             const newPriceFrom = service.priceFrom * (1 - service.sales / 100);
             const newPriceTo = service.priceTo * (1 - service.sales / 100);
 
+            // aria-hidden ukrywa przekreślone cyfry, a czytelne etykiety tłumaczą sytuację czytnikowi ekranu
             priceHTML = `
                 <p class="service-price">
                     Price: 
-                    <span class="old-price">${Math.round(service.priceFrom)}$ - ${Math.round(service.priceTo)}$</span> 
+                    <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;">Original price: ${Math.round(service.priceFrom)}$ to ${Math.round(service.priceTo)}$.</span>
+                    <span class="old-price" aria-hidden="true">${Math.round(service.priceFrom)}$ - ${Math.round(service.priceTo)}$</span> 
+                    <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;">Current sale price:</span>
                     <span class="new-price">${Math.round(newPriceFrom)}$ - ${Math.round(newPriceTo)}$</span>
                 </p>
             `;
@@ -65,9 +68,9 @@ export function renderServices(id, servicesList, isSingleView = false) {
 
         const cardHTML = `
             <div class="service-card" data-services-id='${service.id}'>
-                <div class="badges-container">${badges}</div>
+                <div class="badges-container" aria-label="Service tags">${badges}</div>
                 <h3>${service.title}</h3>
-                <img src="${service.image}" alt="${service.title}" loading='lazy'>
+                <img src="${service.image}" alt="Preview icon for ${service.title}" loading='lazy' aria-hidden="true">
                 <h4 class="service-category">${service.category}</h4>
                 <p class="service-description">${service.description}</p>
                 ${priceHTML}
@@ -79,7 +82,7 @@ export function renderServices(id, servicesList, isSingleView = false) {
         }
 
         return `
-            <a href="/service.html?id=${service.id}" style="text-decoration: none;">
+            <a href="/service.html?id=${service.id}" style="text-decoration: none;" aria-label="View details for ${service.title} service">
                 ${cardHTML}
             </a>
         `;

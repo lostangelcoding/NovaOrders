@@ -17,9 +17,11 @@ export async function initLegalModule(pageType) {
       return;
     }
 
+    // Wstrzykiwanie danych z zachowaniem atrybutów aria-live zdefiniowanych w HTML
     titleEl.textContent = pageData.title;
     updatedEl.textContent = pageData.updated;
 
+    // Każda sekcja prawna jest semantycznie wydzielona jako <section> z nagłówkiem H2
     contentEl.innerHTML = pageData.sections.map(section => `
       <section class="legal-section">
         <h2>${section.heading}</h2>

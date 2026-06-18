@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Frequently asked questions about NovaOrders services and ordering process.">
-    <title>NovaOrders</title>
+    <title>NovaOrders - FAQ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/css/main.css">
     <link rel="canonical" href="">
 </head>
 <body class="flex-column" data-page="faq">
-    <!-- Header -->
-    <header id="header" class="flex-between">
+    <header id="header" class="flex-between" role="banner">
 
     </header>
 
-    <!-- Main -->
     <main>
         <h1 class="service-heading">Frequently Asked Questions</h1>
-        <div id="faq-content" class="faq-container"></div>
+        
+        <div id="faq-content" class="faq-container" role="region" aria-label="FAQ items" aria-live="polite"></div>
     </main>
 
-    <!-- Footer -->
-    <footer id="footer" class="flex">
+    <footer id="footer" class="flex" role="contentinfo">
 
     </footer>
 
-    <!-- JavaScript -->
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
     <script type="module" src="/src/js/index.js"></script>
 </body>
 </html>
