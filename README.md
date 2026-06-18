@@ -1,4 +1,4 @@
-# NovaOrders v1.0.3
+# NovaOrders v1.0.4
 
 A modern, fast, and fully modular digital services ordering platform. Built with vanilla JavaScript (ES6+), component-based CSS architecture, and a serverless backend integration via Google Apps Script.
 
