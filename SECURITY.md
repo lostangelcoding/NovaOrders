@@ -12,7 +12,7 @@ We actively monitor and support the following versions with security updates:
 | 1.0.3   | :x:                |
 | 1.0.2   | :x:                |
 | 1.0.1   | :x:                |
-| < 1.0   | :x:                |
+| 1.0     | :x:                |
 
 ## Reporting a Vulnerability or Bug
 
