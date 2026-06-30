@@ -9,6 +9,16 @@ export function validateEmail(email) {
   return re.test(email);
 }
 
+export function validateName(name) {
+  const re = /^[A-Za-z]$/
+  return re.test(name)
+}
+
+export function validateMessage(message) {
+  const len = message.trim().length;
+  return len >= 20 && len <= 5000;
+}
+
 export function preventDoubleSubmit(submitButton, timeout = 3000) {
   submitButton.disabled = true;
   setTimeout(() => {

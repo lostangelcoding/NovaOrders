@@ -1,11 +1,12 @@
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx9SfqA_NLIS0h5jAX4-AWucXRNTV9_kD3JL6mMcyzJHmHnExFwbG-hoOPo8JZ052uj2A/exec';
+const SCRIPT_URL = import.meta.env.VITE_EMAIL_API_URL;
 
 export async function sendEmail(formData) {
   try {
     const response = await fetch(SCRIPT_URL, {
       method: 'POST',
       mode: 'cors', 
-      body: formData 
+      body: formData,
+      token: import.meta.env.VITE_TOKEN_EMAIL
     });
 
     if (response.ok) {

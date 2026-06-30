@@ -1,6 +1,6 @@
 import { sendEmail } from "/src/js/modules/email.js";
 import { showToast } from "/src/js/utils/toast.js"; 
-import { sanitizeInput, validateEmail, checkRateLimit } from "/src/js/utils/security.js";
+import { sanitizeInput, validateEmail, validateMessage, validateName, checkRateLimit } from "/src/js/utils/security.js";
 
 // FUNCTION: Change the submit button text and disabled state during API call
 function setFormLoadingState(formElement, isLoading) {
@@ -54,9 +54,23 @@ async function handleFormSubmit(event) {
     const nameInput = form.querySelector('input[name="name"]');
     const messageInput = form.querySelector('textarea[name="message"]');
 
-    // Step 3: Validate email address format
+    // Step 3: Validation 
+
+    // Step 3.1: Validate email
     if (emailInput && !validateEmail(emailInput.value)) {
         showToast('❌ Please enter a valid email address.', 'error');
+        return;
+    }
+    
+    // Step 3.2: Validate name
+    if (nameInput && !validateName(nameInput.value)) {
+        showToast('❌ Please enter a valid name (minimum 2 characters).', 'error');
+        return;
+    }
+    
+    // Step 3.3: Validate message
+    if (messageInput && !validateMessage(messageInput.value)) {
+        showToast('❌ Message must be between 20 and 5000 characters.', 'error');
         return;
     }
 
