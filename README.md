@@ -1,4 +1,4 @@
-# NovaOrders v1.1.0
+# NovaOrders v1.1.1
 
 A modern, fast, and fully modular digital services ordering platform. Built with vanilla JavaScript (ES6+), component-based CSS architecture, and a serverless backend integration via Google Apps Script.
 
@@ -6,14 +6,16 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 
 - **Dynamic Routing & Rendering:** Centralized router (`index.js`) managing page-specific states and initialization via `data-page` attributes.
 - **Data-Driven Architecture:** Services, FAQ, and legal pages are dynamically populated from localized JSON data stores.
-- **Robust Security & Validation:** Client-side input sanitization (XSS mitigation), email format validation, and double-submit prevention.
+- **Robust Security & Validation:** Client-side input sanitization (XSS mitigation), structure-based email validation, explicit digit/number prevention for names (without Unicode dependencies), and double-submit prevention via disabled button states.
 - **Serverless Mailer Backend:** Asynchronous integration with Google Apps Script API for automated, non-blocking email dispatch.
 - **Clean UI Component Structure:** Custom-built toast notifications, service category filters, URL-bound live search, and unified CSS variables.
+
 
 ## 📁 Project Structure
 
 ```text
 .
+├──.env.example               # Template for required local environment variables
 ├── LICENSE                   # Project license file
 ├── README.md                 # Main project documentation
 ├── SECURITY.md               # Security policy guidelines
@@ -85,12 +87,13 @@ npm install
 
 ```
 
-3. Configure Backend Endpoint:
+3. Configure Environment Variables:
 
-Open src/js/modules/email.js and set your Google Apps Script production URL (/exec endpoint):
+Create a `.env` file in the root directory based on `.env.example` and populate it with your secure credentials:
 
-```JavaScript
-const SCRIPT_URL = "https://script.google.com/macros/s/.../exec";
+```bash
+VITE_SCRIPT_URL=your_google_apps_script_url_here
+VITE_FORM_TOKEN=your_secret_handshake_token_here
 ```
 
 4. Vite Development Server Execution
@@ -123,7 +126,7 @@ Simultaneously, it serves as a core technical asset within the author's professi
 
 To ensure operational stability and prevent infrastructure degradation, the production API gateway is coupled with a reactive security posture. In the event of anomalous traffic surges, distributed denial-of-service (DDoS) vectors, or automated form spam injection, a dedicated Incident Response (IR) protocol is triggered. 
 
-This vector permits administrators to instantly deprecate the active deployment layer, programmatically rotate sensitive endpoint cryptographic tokens, isolate the Google Apps Script gateway, and immediately neutralize resource exploitation.
+This vector permits administrators to instantly deprecate the active deployment layer, programmatically rotate sensitive endpoint cryptographic tokens (now securely managed via `VITE_FORM_TOKEN` within the local environment configuration), isolate the Google Apps Script gateway, and immediately neutralize resource exploitation.
 
 **📄 License**
 
