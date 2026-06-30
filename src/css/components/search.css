@@ -1,6 +1,6 @@
 .search-wrapper {
     width: 100%;
-    max-width: 800px;
+    max-width: 440px;
     margin: 0 var(--spacing-l);
 }
 
@@ -84,7 +84,7 @@ i.fa-search {
 @media (max-width: 1024px) {
     .search-wrapper {
         margin: 0 var(--spacing-m); 
-        max-width: 320px;
+        max-width: 240px;
     }
 
     .search-input {
@@ -92,7 +92,11 @@ i.fa-search {
     }
 
     .search-input button[type="submit"] {
-        padding: 0 var(--spacing-m);
+        padding: 0 var(--spacing-s);
+    }
+
+    .search-input input[type=search]{
+        max-width: 140px;
     }
 }
 
