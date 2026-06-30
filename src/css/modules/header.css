@@ -99,9 +99,10 @@ header > .nav a:hover::after {
     .logo-wrapper {
         display: flex;
         align-items: center;
+        justify-content: center !important;
         gap: 10px;
         width: 100%;
-        justify-content: flex-start;
+        text-align: center;      
     }
 
     .logo-header img {
@@ -111,6 +112,7 @@ header > .nav a:hover::after {
     .logo-heading h1 {
         font-size: var(--text-m);
         margin: 0;
+        text-align: center;
     }
 
     .logo-heading p {
