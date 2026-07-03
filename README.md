@@ -15,7 +15,7 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 
 ```text
 .
-├── .env.example               # Template for required local environment variables
+├── .env.example              # Template for required local environment variables
 ├── LICENSE                   # Project license file
 ├── README.md                 # Main project documentation
 ├── SECURITY.md               # Security policy guidelines
