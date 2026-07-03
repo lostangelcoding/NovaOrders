@@ -1,4 +1,4 @@
-# NovaOrders v1.1.1
+# NovaOrders v1.1.2
 
 A modern, fast, and fully modular digital services ordering platform. Built with vanilla JavaScript (ES6+), component-based CSS architecture, and a serverless backend integration via Google Apps Script.
 
@@ -7,6 +7,7 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 - **Dynamic Routing & Rendering:** Centralized router (`index.js`) managing page-specific states and initialization via `data-page` attributes.
 - **Data-Driven Architecture:** Services, FAQ, and legal pages are dynamically populated from localized JSON data stores.
 - **Robust Security & Validation:** Client-side input sanitization (XSS mitigation), structure-based email validation, explicit digit/number prevention for names (without Unicode dependencies), and double-submit prevention via disabled button states.
+- **Advanced Anti-Spam & Rate-Limiting:** Dual-layer traffic control utilizing client-side request throttling and serverless backend tracking (via `CacheService` inside Google Apps Script) restricting rapid automated dispatches per client IP address and email identity.
 - **Serverless Mailer Backend:** Asynchronous integration with Google Apps Script API for automated, non-blocking email dispatch.
 - **Clean UI Component Structure:** Custom-built toast notifications, service category filters, URL-bound live search, and unified CSS variables.
 
