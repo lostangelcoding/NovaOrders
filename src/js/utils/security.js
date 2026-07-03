@@ -10,7 +10,7 @@ export function validateEmail(email) {
 }
 
 export function validateName(name) {
-  const re = /^[A-Za-z]$/
+  const re = /^[A-Za-z]+( [A-Za-z]+)?$/;
   return re.test(name)
 }
 
