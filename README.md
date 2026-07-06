@@ -1,12 +1,12 @@
 # NovaOrders v1.1.2
 
-A modern, fast, and fully modular digital services ordering platform. Built with vanilla JavaScript (ES6+), component-based CSS architecture, and a serverless backend integration via Google Apps Script.
+A modern, fast, and fully modular digital services ordering platform. Built with vanilla JavaScript (ES6+), modular CSS architecture, and a serverless backend integration via Google Apps Script.
 
 ## 🚀 Features
 
 - **Dynamic Routing & Rendering:** Centralized router (`index.js`) managing page-specific states and initialization via `data-page` attributes.
 - **Data-Driven Architecture:** Services, FAQ, and legal pages are dynamically populated from localized JSON data stores.
-- **Robust Security & Validation:** Client-side input sanitization (XSS mitigation), structure-based email validation, explicit digit/number prevention for names (without Unicode dependencies), and double-submit prevention via disabled button states.
+- **Robust Security & Validation:** Client-side input validation and sanitization, supported by Content Security Policy (CSP), structure-based email validation, explicit digit/number prevention for names (without Unicode dependencies), and double-submit prevention via disabled button states.
 - **Advanced Anti-Spam & Rate-Limiting:** Dual-layer traffic control utilizing client-side request throttling and serverless backend tracking (via `CacheService` inside Google Apps Script) restricting rapid automated dispatches per client IP address and email identity.
 - **Serverless Mailer Backend:** Asynchronous integration with Google Apps Script API for automated, non-blocking email dispatch.
 - **Clean UI Component Structure:** Custom-built toast notifications, service category filters, URL-bound live search, and unified CSS variables.
@@ -30,6 +30,7 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 ├── service.html              # Dynamic checkout and order page
 ├── services.html             # Full directory of offered services
 ├── terms.html                # Terms of Service view
+├── vercel.json               # Vercel configuration
 ├── vite.config.mjs           # Vite build tool configuration
 │
 ├── public/                   # Static assets served directly as-is
@@ -83,9 +84,7 @@ cd novaorders
 This project requires a package-lock.json file for the automated GitHub Actions CI pipeline to run properly. Generate it locally by running:
 
 ```Bash
-
 npm install
-
 ```
 
 3. Configure Environment Variables:
@@ -96,6 +95,8 @@ Create a `.env` file in the root directory based on `.env.example` and populate 
 VITE_SCRIPT_URL=your_google_apps_script_url_here
 VITE_FORM_TOKEN=your_secret_handshake_token_here
 ```
+
+⚠️ The .env file is excluded from version control via .gitignore and must never be committed to the repository.
 
 4. Vite Development Server Execution
 
@@ -121,13 +122,22 @@ npm run lint
 
 **⚠️ Educational Disclaimer & Incident Response**
 
-This repository is maintained strictly as an open-source educational instrument engineered for research and development (R&D) benchmarking, architectural sandboxing, and modern web asset bundling experimentation. 
+To ensure operational stability and prevent misuse of the contact/ordering system, the application implements a lightweight protection layer designed to mitigate automated submissions and traffic abuse.
 
-Simultaneously, it serves as a core technical asset within the author's professional engineering portfolio, demonstrating production-grade code architecture, modern build-tool integration, and standard software development workflows. 
+Protection mechanisms include:
+- client-side input validation and sanitization
+- basic request throttling
+- token-based verification using environment variables (VITE_FORM_TOKEN)
+- serverless endpoint isolation via Google Apps Script configuration
 
-To ensure operational stability and prevent infrastructure degradation, the production API gateway is coupled with a reactive security posture. In the event of anomalous traffic surges, distributed denial-of-service (DDoS) vectors, or automated form spam injection, a dedicated Incident Response (IR) protocol is triggered. 
+In case of abusive usage patterns (spam or automated form submissions), access to the submission endpoint may be temporarily disabled by revoking or rotating the configured API token or updating the deployment configuration.
 
-This vector permits administrators to instantly deprecate the active deployment layer, programmatically rotate sensitive endpoint cryptographic tokens (now securely managed via `VITE_FORM_TOKEN` within the local environment configuration), isolate the Google Apps Script gateway, and immediately neutralize resource exploitation.
+**📌 Portfolio Notice**
+
+This project is part of a personal software engineering portfolio.
+
+It is shared publicly for educational and demonstration purposes only.  
+Unauthorized copying of branding, structure, or commercial reuse without permission is discouraged.
 
 **📄 License**
 
