@@ -1,7 +1,9 @@
 export function sanitizeInput(text) {
-  const div = document.createElement('div');
-  div.innerText = text;
-  return div.innerHTML;
+  if (!text) return "";
+  return text
+    .replace(/<\/?[^>]+(>|$)/g, "") 
+    .replace(/javascript:/gi, "")   
+    .trim();
 }
 
 export function validateEmail(email) {
@@ -11,7 +13,7 @@ export function validateEmail(email) {
 
 export function validateName(name) {
   const re = /^[A-Za-z]+( [A-Za-z]+)?$/;
-  return re.test(name)
+  return re.test(name);
 }
 
 export function validateMessage(message) {

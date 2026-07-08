@@ -40,6 +40,15 @@ async function handleFormSubmit(event) {
     event.preventDefault();
     const form = event.target;
 
+    // === Step 1.1: FRONTEND HONEYPOT VERIFICATION ===
+    const honeyInput = form.querySelector('input[name="b_username"]');
+    if (honeyInput && honeyInput.value.length > 0) {
+        showToast('🚀 Inquiry sent successfully!', 'success');
+        form.reset();
+        return;
+    }
+
+    // Step 1.2: Check Rate limit
     const cooldown = form.id === 'contact-order-form' ? 60000 : 30000;
     const rateLimit = checkRateLimit(form.id, cooldown, true);
 

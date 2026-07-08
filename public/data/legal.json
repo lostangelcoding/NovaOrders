@@ -4,8 +4,8 @@
     "updated": "Last updated: July 2026",
     "sections": [
       {
-        "heading": "1. Data Collection & Processing",
-        "text": "When you submit a project request through our contact form, we collect your name, email address, selected service, and project requirements. To ensure website security and prevent automated spam, our system temporary processes your IP address. This data is collected and processed securely using Google Cloud Infrastructure (Google Apps Script) for the sole purpose of handling your order and protecting our services."
+        "heading": "1. Data Collection, Security & Flood Protection",
+        "text": "When you submit a project request through our contact form, we collect your name, email address, selected service, and project requirements. To ensure website security, maintain infrastructure stability, and prevent automated flood attacks (DDoS/Spam), our system processes your IP address based on our legitimate interest in securing our services. This IP data is volatile, temporary cached for exactly 60 seconds to enforce rate-limiting, and processed securely using Google Cloud Infrastructure (Google Apps Script) and Vercel Edge Network. It is used solely for protecting our ecosystem and handling your order."
       },
       {
         "heading": "2. Order Notifications & Automation",
@@ -34,8 +34,8 @@
         "text": "All services provided by NovaOrders are custom-built. Due to security protocols and the development process, standard delivery takes between 6 to 13 business days from the moment the project details are finalized. In the event that a project cannot be completed due to unforeseen technical complications or inability to fulfill the requests, NovaOrders will immediately notify the client. In such cases, the client retains the right to decide on the next course of action, including modifying the project requirements or canceling the order."
       },
       {
-        "heading": "2. Fair Use & Anti-Spam Policy",
-        "text": "To ensure stable performance and availability of our services for all potential clients, our contact form is protected by automated rate-limiting solutions. Abuse of the system, infrastructure flood attempts, or submitting rapid automated requests may result in a temporary or permanent block of the user's IP address and email."
+        "heading": "2. Fair Use, Anti-Flood & Anti-Spam Policy",
+        "text": "To ensure stable performance, high availability, and operational safety of our infrastructure for all potential clients, our contact form is strictly protected by automated rate-limiting and Honeypot solutions. Any abuse of the system, malicious infrastructure flood attempts, rapid automated requests, or credential spoofing will be treated as a cyber security incident. Such actions will result in an immediate temporary or permanent block of the user's IP address and email, and may be logged for security audits."
       },
       {
         "heading": "3. Revision Policy",

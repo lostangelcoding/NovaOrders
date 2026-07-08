@@ -131,6 +131,18 @@
     background-color: var(--accent-color);
 }
 
+.form-group-honey {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+
 /* --- Tablet Devices (< 1024px) --- */
 @media (max-width: 1024px) {
     [data-page="service"] main {

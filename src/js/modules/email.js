@@ -1,31 +1,17 @@
-const SCRIPT_URL = import.meta.env.VITE_EMAIL_API_URL;
-
 export async function sendEmail(formData) {
   try {
-    let userIp = "unknown_ip";
-    try {
-      const ipResponse = await fetch('https://api.ipify.org?format=json');
-      const ipData = await ipResponse.json();
-      userIp = ipData.ip;
-    } catch (ipErr) {
-      console.warn('[IP Fetch Warning]: ', ipErr);
-    }
-
+    
     if (formData instanceof FormData) {
       formData.append('token', import.meta.env.VITE_TOKEN_EMAIL);
-      formData.append('ip', userIp);
+      formData.append('ip', '127.0.0.1'); 
     } else {
-      const params = new URLSearchParams(formData);
-      params.append('token', import.meta.env.VITE_TOKEN_EMAIL);
-      params.append('ip', userIp);
-      formData = params;
+      formData.token = import.meta.env.VITE_TOKEN_EMAIL;
+      formData.ip = '127.0.0.1';
     }
 
-    const response = await fetch(SCRIPT_URL, {
+    const response = await fetch('/api/send', {
       method: 'POST',
-      mode: 'cors', 
-      redirect: 'follow', 
-      body: formData
+      body: formData 
     });
 
     if (response.ok) {
@@ -37,8 +23,8 @@ export async function sendEmail(formData) {
         return false;
       }
     }
-    
     return false;
+    
   } catch (error) {
     console.error('[Email Service Error]:', error);
     return false; 
