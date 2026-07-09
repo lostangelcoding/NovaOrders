@@ -1,8 +1,7 @@
 export function sanitizeInput(text) {
   if (!text) return "";
   return text
-    .replace(/<\/?[^>]+(>|$)/g, "") 
-    .replace(/javascript:/gi, "")   
+    .replace(/<\/?[^>]+(>|$)/g, "")
     .trim();
 }
 
