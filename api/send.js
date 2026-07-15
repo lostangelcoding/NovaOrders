@@ -1,6 +1,5 @@
-// api/send.js (Działa w infrastrukturze brzegowej Vercel Edge)
 export const config = {
-  runtime: 'edge', // Gwarantuje błyskawiczne działanie i natychmiastowy dostęp do IP
+  runtime: 'edge', 
 };
 
 export default async function handler(request) {
@@ -9,7 +8,6 @@ export default async function handler(request) {
   }
 
   try {
-    // 1. Vercel automatycznie wstrzykuje tu PRAWDZIWE IP klienta, którego haker nie może sfałszować
     const userIp = request.headers.get('x-forwarded-for') || 'unknown_ip';
 
     // 2. Odbieramy dane z formularza przysłane z frontendu
@@ -23,16 +21,13 @@ export default async function handler(request) {
       bodyData = Object.fromEntries(formData.entries());
     }
 
-    // 3. Budujemy bezpieczną paczkę do Google Apps Script
-    // Przenosimy Token tutaj! Teraz jest w 100% bezpieczny i niewidoczny w przeglądarce!
     const params = new URLSearchParams();
     for (const [key, value] of Object.entries(bodyData)) {
       params.append(key, value);
     }
-    params.append('token', process.env.VITE_TOKEN_EMAIL); // Pobierane bezpiecznie po stronie serwera Vercel
-    params.append('ip', userIp); // Prawdziwe IP
+    params.append('token', process.env.VITE_TOKEN_EMAIL); 
+    params.append('ip', userIp); 
 
-    // 4. Przekazujemy żądanie do Google Apps Script
     const googleResponse = await fetch(process.env.VITE_EMAIL_API_URL, {
       method: 'POST',
       body: params,
