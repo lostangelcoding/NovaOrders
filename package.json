@@ -17,6 +17,7 @@
     "vite": "^8.2.0"
   },
   "dependencies": {
-    "undici": "^6.27.0"
+    "undici": "^6.27.0",
+    "dotenv": "^17.4.2"
   }
 }
