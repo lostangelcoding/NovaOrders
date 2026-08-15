@@ -2,7 +2,6 @@ docs/
 node_modules/
 dist/
 build/
-tests/
 .env
 .DS_Store
 *.log
