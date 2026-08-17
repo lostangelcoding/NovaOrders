@@ -10,7 +10,6 @@ export default async function handler(request) {
   try {
     const userIp = request.headers.get('x-forwarded-for') || 'unknown_ip';
 
-    // 2. Odbieramy dane z formularza przysłane z frontendu
     const contentType = request.headers.get('content-type');
     let bodyData;
 
