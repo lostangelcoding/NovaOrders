@@ -1,5 +1,10 @@
 # NovaOrders v1.1.3
 
+> ⚠️ **Project Status: Archived / Discontinued**  
+> Active development on this project has been concluded due to lack of bandwidth and resources for future maintenance and updates. The codebase remains publicly available as an archived reference and portfolio project.
+
+---
+
 A modern, fast, and fully modular digital services ordering platform. Built with vanilla JavaScript (ES6+), modular CSS architecture, and a serverless backend integration via Google Apps Script.
 
 ## 🚀 Features
@@ -16,7 +21,7 @@ A modern, fast, and fully modular digital services ordering platform. Built with
 
 ## 📁 Project Structure
 
-```text
+```
 .
 ├── .env.example              # Template for required local environment variables
 ├── LICENSE                   # Project license file
@@ -72,44 +77,38 @@ A modern, fast, and fully modular digital services ordering platform. Built with
             ├── pageTitle.js, security.js, toast.js
 ```
 
-**🛠️ Installation & Setup**
+🛠️ Installation & Setup
 
 1. Clone the repository:
-
-```Bash
-git clone https://github.com/lostangelcoding/novaorders.git
+```bash
+git clone [https://github.com/lostangelcoding/novaorders.git](https://github.com/lostangelcoding/novaorders.git)
 cd novaorders
 ```
 
 2. Install dependencies and generate lockfile:
 
 This project requires a package-lock.json file for the automated GitHub Actions CI pipeline to run properly. Generate it locally by running:
-
-```Bash
+```bash
 npm install
 ```
-
 3. Configure Environment Variables:
 
-Create a `.env` file in the root directory based on `.env.example` and populate it with your secure credentials:
-
-```bash
-VITE_EMAIL_API_URL=https://script.google.com/macros/.../exec
+Create a .env file in the root directory based on .env.example and populate it with your secure credentials:
+```Bash
+VITE_EMAIL_API_URL=[https://script.google.com/macros/.../exec](https://script.google.com/macros/.../exec)
 VITE_TOKEN_EMAIL=your_cryptographic_authorization_token_here
 ```
 
-⚠️ The `.env` file is excluded from version control via `.gitignore` and must never be committed to the repository.
-
+⚠️ The .env file is excluded from version control via .gitignore and must never be committed to the repository.
 
 4. Vite Development Server Execution & API Proxying
 
-Because the project structure is managed by Vite, native ECMAScript 6 (ES6) Modules are compiled and bundled on-the-fly. 
+Because the project structure is managed by Vite, native ECMAScript 6 (ES6) Modules are compiled and bundled on-the-fly.
 
-To bypass HTTP 404/405 file-mapping errors during local development, the environment utilizes a local developer-endpoint router (`/api/send`) managed via Vite Server Proxy (configured in `vite.config.js`). Vite intercepts frontend fetch calls and automatically reroutes the entire network payload stream securely to the remote serverless backend.
+To bypass HTTP 404/405 file-mapping errors during local development, the environment utilizes a local developer-endpoint router (/api/send) managed via Vite Server Proxy (configured in vite.config.js). Vite intercepts frontend fetch calls and automatically reroutes the entire network payload stream securely to the remote serverless backend.
 
 To spin up the local development environment with the active proxy configuration, run:
-
-```Bash
+```bash
 npm run dev
 ```
 
@@ -120,14 +119,13 @@ Once initialized, open your browser and navigate to the local loopback address p
 Code quality and style consistency are automatically enforced via ESLint. A GitHub Actions workflow ensures all checks pass before merges.
 
 To execute code analysis manually:
-
-```Bash
+```bash
 npm run lint
 ```
 
 **⚠️ AppSec Engineering Disclaimer & Incident Response**
 
-To ensure operational stability and prevent infrastructure abuse, the platform implements an advanced, production-grade Application Security (AppSec) framework designed to enforce *Defense-in-Depth* paradigms.
+To ensure operational stability and prevent infrastructure abuse, the platform implements an advanced, production-grade Application Security (AppSec) framework designed to enforce Defense-in-Depth paradigms.
 
 Protection mechanisms include:
 - Client-side input whitelisting and structural HTML stripping
@@ -138,12 +136,11 @@ Protection mechanisms include:
 
 In case of abusive usage patterns or coordinated flooding attempts, the infrastructure automatically triggers isolated rate-limit cooling windows, drops malicious payload streams with spoofed success responses, and registers forensic logs for auditing without interrupting user availability.
 
-
 **📌 Portfolio Notice**
 
 This project is part of a personal software engineering portfolio.
 
-It is shared publicly for educational and demonstration purposes only.  
+It is shared publicly for educational and demonstration purposes only.
 Unauthorized copying of branding, structure, or commercial reuse without permission is discouraged.
 
 **📄 License**
